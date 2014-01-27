@@ -1,0 +1,51 @@
+//image size and centering
+  (function( $ ) {
+      jQuery.fn.resize = function(targetWidth, targetHeight, settings) {
+
+        var config = {
+          "vcenter": false
+        };
+        
+        if(!targetWidth || !targetHeight) { return this; }
+        
+        if(settings){$.extend(config,settings);}
+
+        return this.each(function(x) {
+            
+            var $this = $(this);
+            
+            var newWidth = 0;
+            var newHeight = 0;
+            var imgSrc = $this.attr("src");
+            var newImg = new Image();
+
+            newImg.onload = function() {
+
+              if(this.width <= targetWidth && this.height <= targetHeight) {
+                newWidth = this.width;
+                newHeight = this.height;
+              } else {
+                newWidth = Math.floor((targetHeight * this.width) / this.height);
+                if(newWidth > targetWidth) {
+                  newHeight = Math.floor((targetWidth * this.height) / this.width);
+                  newWidth = targetWidth;
+                } else {
+                  newHeight = targetHeight;
+                }
+              }
+
+              $this.width(newWidth);
+              $this.height(newHeight);
+
+              if(config.vcenter) {
+                $this.css("margin-top",Math.floor((targetHeight - newHeight) / 2));
+              }
+
+            };
+
+            newImg.src = imgSrc;
+            
+      });
+    }
+      
+  })( jQuery );
