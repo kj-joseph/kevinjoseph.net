@@ -17,6 +17,7 @@
 			<li>XML</li>
 			<li>Backbone.js</li>
 			<li>Underscore.js</li>
+			<li>Require.js</li>
 			<li>Handlebars</li>
 			<li>YUI</li>
 		</ul>
@@ -72,11 +73,6 @@
 	<li>APIs / CMS
 		<ul>
 			<li>Google Maps API v3</li>
-		</ul>
-	</li>
-	<li>Content Management
-		<ul>
-			<li>Wordpress</li>
 		</ul>
 	</li>
 	<li>Content Management

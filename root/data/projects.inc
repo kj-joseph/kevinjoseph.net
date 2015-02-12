@@ -2,7 +2,7 @@
 <p>Outside of work hours, I do often work on personal projects, in order to keep up my skills.  I've created a <a href="https://github.com/kj-joseph/" target="_blank">github account</a> to showcase the code used during some of my recent projects:</p>
 <ul class="resume">
 	<li>
-		<a href="http://ifa.m9d.net/" target="_blank">IFA</a>
+		<a href="http://ifa.bykev.in/" target="_blank">IFA</a>
 		<p>A prototype website for a soccer fantasy league.  This is definitely a work in progress, in the hopes of being fully ready for the 2014-15 season.</p>
 		<p>Technologies used:</p>
 		<ul>
