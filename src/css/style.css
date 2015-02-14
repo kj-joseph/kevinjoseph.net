@@ -1,0 +1,259 @@
+html {
+	font-size: .625em;
+	font-family: helvetica, verdana, arial;
+	background: #666666;
+	color: #000000;
+}
+
+body {
+	font-size: 1.5em;
+}
+
+a,a:visited {
+	color: #FF6633;
+}
+a:hover,a:focus,a:active {
+	color: #6699CC;
+}
+
+p {
+	margin-bottom: .8em; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Signika, helvetica, verdana, arial;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+h2 {
+	font-size: 1.4em;
+	margin-bottom: .5em;
+}
+h3 {
+	font-size: 1.2em;
+	margin-bottom: .2em;
+}
+
+ul {
+	list-style-position: inside;
+	margin-bottom: 1em;
+}
+
+li {
+	margin-bottom: .4em;
+}
+
+ul ul, ul dl {
+	margin-left: 1em;
+	margin-top: .3em;
+}
+
+dl {
+	margin-bottom: 1em;
+}
+dt {
+	float: left;
+	clear: both;
+	width: 25%;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+dd { 
+	float: right;
+	width: 75%;
+	margin-bottom: .5em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 8px auto;
+}
+
+.right {
+	float: right;
+}
+img.right {
+	margin: 8px 0 8px 8px;
+}
+
+.left {
+	float: left;
+}
+img.left {
+	margin: 8px 8px 8px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearAfter:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	display: none;
+	opacity: .5;
+	background: #000000;
+}
+
+#header {
+	position: relative;
+	z-index: 100;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px 20px;
+	background: #000000;
+}
+
+#appdiv {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#boxes {
+	width: 720px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	width: 220px;
+	height: 150px;
+	text-align: center;
+	margin: 0 5px 10px;
+	padding: 10px 5px	;
+	background: #CCCCCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.box h2 {
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.box img {
+	display: block;
+	margin: 0 0 5px;
+}
+
+#content {
+	display: none;
+	margin: 0 auto;
+	padding: 15px;
+	max-width: 800px;
+	background: #FFFFFF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#loading { 
+	display: none;
+	margin: 0 auto;
+}
+
+#content>div {
+	position: relative;
+}
+
+#content>div .close {
+	position: absolute;
+	top: -25px;
+	right: 15px;
+}
+
+#content>div .close a,
+#content>div .close a:visited {
+	display: block;
+	font-size: .8em;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1.4em;
+	padding: 3px 15px 4px;
+	background: #DDDDDD;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+#content>div .close a:hover,
+#content>div .close a:focus,
+#content>div .close a:active {
+	background: #BBBBBB;
+}
+	
+/* Resume lists */
+
+ul.resume li {
+	font-weight: bold;
+	font-size: 1.1em;
+	list-style: none outside;
+	margin-bottom: 1.2em;
+}
+
+ul.resume li p {
+	font-weight: normal;
+	font-style: italic;
+	margin-top: .3em;
+	margin-left: 1em;
+	margin-bottom: .4em;
+}
+
+ul.resume li li {
+	font-weight: normal;
+	font-size: 1em;
+	list-style: disc inside;
+	margin: .2em 0 .5em 1em;
+}
+ul.resume li li li {
+	list-style: circle inside;
+	margin-bottom: .2em;
+}
+
+
+@media screen and (max-width: 840px) {
+
+
+#content {
+	margin: 0 5px;
+}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 719px) {
+	
+#boxes {
+	width: 480px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 499px) {
+	
+#boxes {
+	width: 240px;
+}
+
+}

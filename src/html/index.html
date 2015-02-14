@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Kevin Joseph | Front-end Web Developer | Minneapolis, MN, USA</title>
+	<link rel="stylesheet" href="/css/style-min.css">
+	<link href="http://fonts.googleapis.com/css?family=Signika:600" rel="stylesheet" type="text/css">	
+	
+	<script src="/js/lib/modernizr-min.js"></script>
+	<script src="/js/lib/jquery-min.js"></script>
+	<script src="/js/lib/handlebars.js"></script>
+	<script src="/js/lib/underscore-min.js"></script>
+	<script src="/js/lib/backbone-min.js"></script>
+	<script src="/js/lib/mousetrap-min.js"></script>
+</head>
+<body>
+
+<script id="box-template" type="text/x-handlebars-template">
+	{{#if thumb}}
+	<img alt="{{thumb.alt}}" src="{{thumb.image}}"/>
+	{{/if}}
+	<h2>{{title}}</h2>
+</script>
+
+<script src="/js/app-min.js"></script>
+
+<div id="header">
+	<h1>Kevin Joseph &middot; Front-end Web Developer &middot; Minneapolis, MN, USA</h1>
+</div>
+
+<div id="appdiv">
+	<div id="boxes" class="clearAfter">
+	
+	</div>
+	<div id="content">
+		<img id="loading" src="/img/loading.gif" alt="loading"/>
+	
+	</div>
+</div>
+
+</body>
+</html>
