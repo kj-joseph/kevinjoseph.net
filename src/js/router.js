@@ -7,7 +7,6 @@ app.SiteRouter = Backbone.Router.extend({
 	},
 	
 	startup: function(startbox) {
-		
 		if(!app.config.initialized) {
 			app.boxes = new app.BoxCollection();
 			app.boxes.fetch({success: function(coll){

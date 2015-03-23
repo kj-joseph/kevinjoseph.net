@@ -60,6 +60,7 @@ app.BoxView = Backbone.View.extend({
 			this.options.parent.append(this.$el);
 
 			if(this.options.start) {
+				this.expand();
 			}
 		},
 		

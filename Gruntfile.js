@@ -123,6 +123,15 @@ module.exports = function(grunt) {
 							"*"
 						],
 						dest: "build/js/lib/"
+					},
+					{
+						expand: true,
+						dot: true,
+						cwd: "src/html",
+						src: [
+							".htaccess"
+						],
+						dest: "build/"
 					}
 				]
 			},
@@ -130,6 +139,7 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
+						dot: true,
 						cwd: "build",
 						mode: "775",
 						src: [
@@ -143,6 +153,7 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
+						dot: true,
 						cwd: "build",
 						mode: "775",
 						src: [
