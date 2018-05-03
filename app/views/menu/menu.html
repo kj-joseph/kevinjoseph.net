@@ -1,0 +1,8 @@
+<div id="boxes" ng-controller="catListCtrl">
+	<div class="box col-xs-12 col-sm-6 col-md-4" ng-repeat="cat in categories">
+		<div ng-click="go(cat.panel)">
+			<img alt="{{cat.thumb.alt}}" src="{{cat.thumb.image}}" />
+			<h2>{{cat.title}}</h2>
+		</div>
+	</div>
+</div>
