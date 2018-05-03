@@ -3,7 +3,24 @@
 <ul class="resume">
 	<li>
 		<a href="http://www.kevinjoseph.net/">KevinJoseph.net</a>
+<<<<<<< HEAD:app/data/projects.inc
 		<p>The site you're viewing.  Updated in June 2015 to utilize a new technology stack centered around AngularJS.</p>
+=======
+		<p>The site you're viewing.  Recently updated in 2015 to utilize Node/npm and Grunt for build purposes.</p>
+		<p>Technologies used:</p>
+		<ul>
+			<li><a href="http://backbonejs.org/" target="_blank">backbone.js</a></li>
+			<li><a href="http://handlebarsjs.com/" target="_blank">Handlebars</a></li>
+			<li><a href="http://modernizr.com/" target="_blank">Modernizr</a></li>
+			<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+			<li><a href="http://nodejs.org/" target="_blank">Node.js</a></li>
+			<li><a href="http://gruntjs.com/" target="_blank">Grunt</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://ifa.bykev.in/" target="_blank">IFA</a>
+		<p>A prototype website for a soccer fantasy league; a work in progress.</p>
+>>>>>>> refs/remotes/origin/master:src/data/projects.inc
 		<p>Technologies used:</p>
 		<ul>
 			<li><a href="http://angularjs.org/" target="_blank">AngularJS</a></li>
