@@ -7,7 +7,6 @@ var dirs = {
 	gulp = require("gulp"),
 	jasmine = require("gulp-jasmine"),
 	karma = require("karma").server,
-//	sass = require("gulp-ruby-sass"),
 	sass = require("gulp-sass"),
 	autoprefixer = require("gulp-autoprefixer"),
 	minifycss = require("gulp-minify-css"),
@@ -56,13 +55,6 @@ gulp.task("clean", ["test"], function() {
 
 
 gulp.task("styles", function() {
-	// return sass("app/css/app.scss", { style: "expanded" })
-	// 	.pipe(autoprefixer({browsers:["last 2 versions"]}))
-	// 	.pipe(gulp.dest(outdir+"/css"))
-	// 	.pipe(rename({suffix: ".min"}))
-	// 	.pipe(minifycss())
-	// 	.pipe(gulp.dest(outdir+"/css"))
-
 	return gulp.src("app/css/app.scss")
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest(outdir+"/css"))
