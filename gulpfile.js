@@ -7,8 +7,7 @@ var dirs = {
 	gulp = require("gulp"),
 	jasmine = require("gulp-jasmine"),
 	karma = require("karma").server,
-	//karma = require("gulp-karma"),
-	sass = require("gulp-ruby-sass"),
+	sass = require("gulp-sass"),
 	autoprefixer = require("gulp-autoprefixer"),
 	minifycss = require("gulp-minify-css"),
 	jshint = require("gulp-jshint"),
@@ -20,7 +19,6 @@ var dirs = {
 	cache = require("gulp-cache"),
 	del = require("del"),
 	map = require("map-stream"),
-	//istanbul = require("gulp-istanbul"),
 	lintReport = map(function(file, cb) {
 		if (!file.jshint.success) {
 			console.log("JSHINT fail in "+file.path);
@@ -37,8 +35,6 @@ var dirs = {
 
 gulp.task("test", ["lint"], function(done) {
 	gulp.src(["app/js/*.js","app/views/**/*.js"])
-	//	.pipe(istanbul())
-	//	.pipe(istanbul.hookRequire())
 		.on("finish", function() {			
 			karma.start({
 				configFile: __dirname + "/karma.conf.js",
@@ -59,12 +55,12 @@ gulp.task("clean", ["test"], function() {
 
 
 gulp.task("styles", function() {
-	return sass("app/css/app.scss", { style: "expanded" })
-		.pipe(autoprefixer({browsers:["last 2 versions"]}))
+	return gulp.src("app/css/app.scss")
+		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest(outdir+"/css"))
 		.pipe(rename({suffix: ".min"}))
 		.pipe(minifycss())
-		.pipe(gulp.dest(outdir+"/css"))
+		.pipe(gulp.dest(outdir+"/css"));
 });
 
 gulp.task("images", function() {
