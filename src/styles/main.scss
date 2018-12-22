@@ -1,0 +1,24 @@
+@import "../../node_modules/css-reset-and-normalize-sass/scss/reset-and-normalize";
+
+@import "colors";
+@import "fonts";
+@import "text";
+
+@import "header";
+
+html {
+	height: 100%;
+	background: $white;
+
+	body {
+
+		#content {
+
+			padding: 90px 10px 10px;
+
+		}
+
+
+	}
+
+}

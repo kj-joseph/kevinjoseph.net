@@ -1,0 +1,33 @@
+nav {
+	position: fixed;
+	left: -100%;
+	top: 81px;
+	height: calc(100% - 121px);
+	width: calc(100% - 20px);
+	font-family: $ubuntu;
+	font-size: 2rem;
+	padding: 10px 0;
+	background: white;
+	border: 10px solid $blue;
+	transition: left .2s linear;
+
+	&.open {
+		left: 0;
+	}
+
+	a {
+		display: block;
+		font-size: 2rem;
+		color: $gray;
+		text-decoration: none;
+		padding: 10px 20px;
+
+		&.active {
+			color: $blue;
+		}
+
+	}
+	
+}
+
+
