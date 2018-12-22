@@ -14,11 +14,16 @@ html {
 
 		#content {
 
-			padding: 90px 10px 10px;
+			margin: 95px 15px 15px;
 
 		}
 
 
+	}
+
+	&.noscroll {
+		width: calc(100%);
+		overflow: hidden;
 	}
 
 }
