@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class HomePage<Props> extends React.Component<any> {
+export default class ResumePage<Props> extends React.Component<any> {
 
 	constructor(props: Props) {
 		super(props);
@@ -16,7 +16,7 @@ export default class HomePage<Props> extends React.Component<any> {
 
 		return (
 			<div>
-				<h1>Title of the Page</h1>
+				<h1>Resume</h1>
 				<p>Spicy jalapeno <a href="https://baconipsum.com/" target="_blank" rel="noopener noreferrer">bacon ipsum</a> dolor amet
 					spare ribs pork chop venison brisket, cupim prosciutto tail alcatra tenderloin beef ribs.
 					Meatball rump leberkas swine. Capicola filet mignon andouille jerky spare ribs leberkas. Brisket leberkas shank ground round.

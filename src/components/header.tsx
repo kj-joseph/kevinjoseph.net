@@ -3,7 +3,7 @@ import ReactSVG from "react-svg";
 
 import menuIcon from "images/bars.svg";
 
-import SiteMenu from "components/siteMenu";
+import Nav from "components/nav";
 
 interface IHeaderState {
 	menuOpen: boolean;
@@ -42,8 +42,9 @@ export default class Header<Props> extends React.Component<any> {
 
 				</header>
 
-				<SiteMenu
+				<Nav
 					open={this.state.menuOpen}
+					toggle={this.toggleMenu}
 				/>
 
 			</>
