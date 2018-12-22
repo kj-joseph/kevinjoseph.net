@@ -54,10 +54,12 @@ export default class Header<Props> extends React.Component<any> {
 
 	toggleMenu(): void {
 
-		const menuOpen = this.state.menuOpen;
+		const menuOpen = !this.state.menuOpen;
+
+		document.documentElement.classList.toggle("noscroll");
 
 		this.setState({
-			menuOpen: !menuOpen,
+			menuOpen,
 		});
 
 	}
