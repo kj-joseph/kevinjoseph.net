@@ -6,6 +6,19 @@
 
 @import "header";
 
+@import "contact";
+
+@keyframes fadein {
+	0% {
+		color: $blue;
+		opacity: 0;
+	}
+    100% {
+    	color: $black;
+    	opacity: 1;
+    }
+}
+
 html {
 	height: 100%;
 	background: $white;
@@ -15,6 +28,12 @@ html {
 		#content {
 
 			margin: 95px 15px 15px;
+
+			> div {
+
+				animation: fadein 1s;
+
+			}
 
 		}
 
