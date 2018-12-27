@@ -2,6 +2,9 @@ RewriteEngine On
 
 RewriteRule ^(images)($|/) - [L]
 
+RewriteRule %{REQUEST_URI} .*\.(ico|png)
+RewriteRule ^(.*)/ - [L]
+
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
 RewriteRule ^ - [L]
