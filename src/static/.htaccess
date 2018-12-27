@@ -1,6 +1,7 @@
 RewriteEngine On
 
 RewriteRule ^(images)($|/) - [L]
+RewriteRule ^(.*\.(png|ico|xml|webmanifest|svg))($|/) - [L]
 
 RewriteRule %{REQUEST_URI} .*\.(ico|png)
 RewriteRule ^(.*)/ - [L]
