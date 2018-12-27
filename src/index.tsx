@@ -10,16 +10,16 @@ import "styles/main.scss";
 
 // load static files
 import "static/.htaccess";
+require.context("static/resume", false);
+
 // require.context("images/favicon", true);
 import "static/robots.txt";
 
 // import page classes
-import HomePage from "pages/homepage";
-import ResumePage from "pages/resume";
 import ContactPage from "pages/contact";
 import DesignPage from "pages/design";
-import InterestsPage from "pages/interests";
-import TechPage from "pages/tech";
+import HomePage from "pages/homepage";
+import ResumePage from "pages/resume";
 import WebPage from "pages/web";
 
 import NotFoundPage from "status/404";
@@ -49,9 +49,7 @@ class AppRouter<Props> extends React.Component<any> {
 
 							<Route path="/contact" component={ContactPage} />
 							<Route path="/design" component={DesignPage} />
-							<Route path="/interests" component={InterestsPage} />
 							<Route path="/resume" component={ResumePage} />
-							<Route path="/tech" component={TechPage} />
 							<Route path="/web" component={WebPage} />
 
 							<Route component={NotFoundPage} />

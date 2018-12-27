@@ -32,7 +32,8 @@ export default class Header<Props> extends React.Component<any> {
 					<ReactSVG
 						className={`menuIcon${this.state.menuOpen ? " open" : ""}`}
 						src={menuIcon}
-						onClick={this.toggleMenu} />
+						onClick={this.toggleMenu}
+					/>
 
 					<div className="headerText">
 						<span className="name">Kevin Joseph</span><br />

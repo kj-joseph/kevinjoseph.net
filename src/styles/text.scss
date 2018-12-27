@@ -5,6 +5,28 @@ html {
 h1 {
 	font-family: $ubuntu;
 	font-size: 2rem;
+	line-height: 1.1em;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-family: $ubuntu;
+	font-size: 1.6rem;
+	color: $blue;
+	line-height: 1.1em;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.1em;
+	margin-bottom: .6rem;
+}
+
+h4 {
+	font-weight: bold;
+	color: $gray;
+	line-height: 1.1em;
 	margin-bottom: 1rem;
 }
 
@@ -12,9 +34,6 @@ p {
 	line-height: 1.1em;
 	margin-bottom: 1em;
 }
-
-
-
 
 a {
 	color: $blue;

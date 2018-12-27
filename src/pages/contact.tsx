@@ -18,6 +18,8 @@ export default class ContactPage<Props> extends React.Component<any> {
 			<div>
 				<h1>Contact Me</h1>
 
+				<p>Email is, by far, the best way to contact me.</p>
+
 				<dl>
 					<dt>Email</dt>
 					<dd>kevin.p.joseph@gmail.com</dd>
@@ -33,6 +35,7 @@ export default class ContactPage<Props> extends React.Component<any> {
 						</address>
 					</dd>
 				</dl>
+
 
 			</div>
 		);

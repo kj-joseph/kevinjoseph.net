@@ -1,0 +1,45 @@
+.slideControls {
+	clear: both;
+	display: flex;
+	text-align: center;
+	margin: 20px 0;
+	border-top: 1px solid $ghost;
+	border-bottom: 1px solid $ghost;
+
+	a {
+		flex-grow: 1;
+		margin: 0 10px;
+		padding: 5px 10px;
+
+		svg {
+			height: 25px;
+			fill: $gray;
+		}
+
+		&.disabled {
+			cursor: not-allowed;
+
+			svg {
+				fill: $ghost;
+			}
+		}
+
+	}
+
+
+}
+
+.slide {
+	min-height: 300px;
+
+	.head {
+		margin-bottom: 1em;
+
+		.parenthetical {
+			font-size: .8rem;
+			font-style: italic;
+			margin-top: -.5em;
+		}
+	}
+
+}

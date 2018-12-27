@@ -1,12 +1,16 @@
 @import "../../node_modules/css-reset-and-normalize-sass/scss/reset-and-normalize";
 
 @import "colors";
+@import "breakpoints";
+
 @import "fonts";
 @import "text";
 
-@import "header";
+@import "corner";
+@import "list";
+@import "slides";
 
-@import "contact";
+@import "header";
 
 @keyframes fadein {
 	0% {
@@ -31,7 +35,7 @@ html {
 
 			> div {
 
-				animation: fadein 1s;
+				animation: fadein .7s;
 
 			}
 
@@ -41,7 +45,7 @@ html {
 	}
 
 	&.noscroll {
-		width: calc(100%);
+		width: 100%;
 		overflow: hidden;
 	}
 

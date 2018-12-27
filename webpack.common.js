@@ -34,6 +34,16 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(pdf|docx)$/,
+				use: {
+					loader: "file-loader",
+					options: {
+						name: "[name].[ext]",
+						outputPath: "/resume",
+					}
+				}
+			},
+			{
 				test: /\.htaccess$/,
 				use: {
 					loader: "file-loader",
