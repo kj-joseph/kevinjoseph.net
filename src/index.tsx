@@ -12,7 +12,7 @@ import "styles/main.scss";
 import "static/.htaccess";
 require.context("static/resume", false);
 
-// require.context("images/favicon", true);
+require.context("images/favicon", true);
 import "static/robots.txt";
 
 // import page classes
