@@ -37,7 +37,7 @@ export default class ResumePage<Props> extends React.Component<any> {
 	render() {
 
 		return (
-			<div className="slides">
+			<div>
 
 				<div className="corner">
 					<a title="Download resume in PDF format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.pdf">

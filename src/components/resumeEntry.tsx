@@ -24,7 +24,7 @@ export default class ResumeEntry extends React.Component<IResumeEntryProps> {
 
 		return (
 
-			<div className="entry">
+			<div className="slide">
 
 				<div className="head">
 					<h2>
