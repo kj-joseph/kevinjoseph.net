@@ -40,12 +40,12 @@ export default class ResumePage<Props> extends React.Component<any> {
 			<div className="slides">
 
 				<div className="corner">
-					<a title="Download resume in PDF format" href="/resume/Kevin%20Joseph%20-%20resume.pdf">
+					<a title="Download resume in PDF format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.pdf">
 						<ReactSVG
 							src={IconPDF}
 						/>
 					</a>
-					<a title="Download resume in Microsoft Word format" href="/resume/Kevin%20Joseph%20-%20resume.docx">
+					<a title="Download resume in Microsoft Word format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.docx">
 						<ReactSVG
 							src={IconWord}
 						/>
