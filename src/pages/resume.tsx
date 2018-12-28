@@ -226,8 +226,8 @@ export default class ResumePage<Props> extends React.Component<any> {
 
 						<p>Main technologies used:</p>
 						<ul>
-							<li>HTML</li>
 							<li>CSS</li>
+							<li>HTML</li>
 							<li>JavaScript</li>
 							<li>JSP</li>
 						</ul>
