@@ -70,9 +70,9 @@ export default class ResumePage<Props> extends React.Component<any> {
 					<ResumeEntry
 						company="Rain Bird"
 						start="August 2018"
+						end="February 2019"
 						location="San Diego, CA"
 						title="Software Test Engineer"
-						current={true}
 						contract="Black Diamond Networks"
 					>
 
