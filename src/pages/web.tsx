@@ -61,7 +61,6 @@ export default class WebPage<Props> extends React.Component<any> {
 						</p>
 						<p>
 							I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
-							Currently self-hosted on my Linux server.
 						</p>
 
 						<ul>
@@ -86,7 +85,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							The site for my graphic design company.  Currently hosted on AWS.
+							The site for my graphic design company.
 						</p>
 
 						<ul>
@@ -110,7 +109,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							This site.  Switched in late 2018 from AngularJS to React.  Hosted on AWS.
+							This site.  Switched in late 2018 from AngularJS to React.
 						</p>
 
 						<ul>
@@ -125,7 +124,6 @@ export default class WebPage<Props> extends React.Component<any> {
 					</WebExample>
 
 					<WebExample
-						url="http://www.supportyourlocalclub.com/"
 						title="Support Your Local Club"
 						launched="December 2013"
 						github="supportyourlocalclub"
