@@ -7,7 +7,7 @@ const src_dir = path.resolve(__dirname, "src");
 const node_dir = path.resolve(__dirname, "node_modules");
 
 module.exports = {
-	entry: ["@babel/polyfill", src_dir + "/index.tsx"],
+	entry: ["core-js/stable", "regenerator-runtime/runtime" , src_dir + "/index.tsx"],
 
 	output: {
 		filename: "bundle.js",
