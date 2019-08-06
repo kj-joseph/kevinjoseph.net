@@ -100,7 +100,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					</WebExample>
 
 					<WebExample
-						url="http://kevinjoseph.net/"
+						url="https://kevinjoseph.net/"
 						title="KevinJoseph.net"
 						version="4.0"
 						versionLaunched="December 2018"
