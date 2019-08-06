@@ -30,7 +30,7 @@ matrix:
       on:
         branch: master
     before_install:
-    - openssl aes-256-cbc -K $encrypted_024b6d64651d_key -iv $encrypted_024b6d64651d_iv
+    - openssl aes-256-cbc -K $encrypted_adb1fe1c85a4_key -iv $encrypted_adb1fe1c85a4_iv
       -in travis_rsa.enc -out /tmp/travis_rsa -d
     - eval "$(ssh-agent -s)"
     - chmod 600 /tmp/travis_rsa
