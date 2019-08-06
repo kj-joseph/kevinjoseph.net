@@ -5,18 +5,17 @@ branches:
   - master
 matrix:
   include:
-  - name: "web"
+  - name: "kjnet"
     language: node_js
     node_js:
     - stable
     cache:
       directories:
-      - web/node_modules
+      - node_modules
     branches:
       only:
       - dev
     script:
-    - cd web
     - npm install
     - if [[ "$TRAVIS_BRANCH" == "dev" ]]; then npm run build:dev; fi
     - if [[ "$TRAVIS_BRANCH" =~ ^(release|hotfix)\/.*$ ]]; then npm run build:prod; fi
