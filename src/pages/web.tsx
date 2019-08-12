@@ -12,7 +12,7 @@ interface IWebState {
 export default class WebPage<Props> extends React.Component<any> {
 
 	state: IWebState = {
-		entryCount: 6,
+		entryCount: 5,
 		entryIndex: 0,
 	};
 
