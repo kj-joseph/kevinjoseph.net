@@ -85,7 +85,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							The site for my graphic design company.
+							The site for my freelance graphic design company.
 						</p>
 
 						<ul>
@@ -119,28 +119,6 @@ export default class WebPage<Props> extends React.Component<any> {
 							<li>Sass</li>
 							<li>TypeScript / JavaScript</li>
 							<li>Webpack</li>
-						</ul>
-
-					</WebExample>
-
-					<WebExample
-						title="Support Your Local Club"
-						launched="December 2013"
-						github="supportyourlocalclub"
-						inactive={true}
-					>
-
-						<p>
-							Designed as a site to allow people to locate soccer teams in the US and Canada, but never caught on.
-						</p>
-
-						<ul>
-							<li>CodeIgniter</li>
-							<li>Google Maps API</li>
-							<li>jQuery</li>
-							<li>MySQL</li>
-							<li>PHP</li>
-							<li>WordPress</li>
 						</ul>
 
 					</WebExample>
