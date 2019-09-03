@@ -34,7 +34,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(pdf|docx)$/,
+				include: [
+					path.resolve(src_dir, "static/resume"),
+				],
+				test: /\.(pdf|docx|txt)$/,
 				use: {
 					loader: "file-loader",
 					options: {

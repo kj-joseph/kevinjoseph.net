@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SwipeableViews from "react-swipeable-views";
 
 import IconPDF from "images/file-pdf.svg";
+import IconText from "images/file-txt.svg";
 import IconWord from "images/file-word.svg";
 import ReactSVG from "react-svg";
 
@@ -48,6 +49,11 @@ export default class ResumePage<Props> extends React.Component<any> {
 					<a title="Download resume in Microsoft Word format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.docx">
 						<ReactSVG
 							src={IconWord}
+						/>
+					</a>
+					<a title="Download resume in text format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.txt">
+						<ReactSVG
+							src={IconText}
 						/>
 					</a>
 				</div>
