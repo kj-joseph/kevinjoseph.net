@@ -81,7 +81,8 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							One of many test-prep landing pages created while at Study.com.  Worked with designers to create a design system to offer to those creating the content for the pages to streamline development.
+							One of many test-prep landing pages created while at Study.com.
+							Worked with designers to create a design system to offer to those creating the content for the pages to streamline development.
 						</p>
 
 						<ul>
