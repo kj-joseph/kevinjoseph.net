@@ -38,7 +38,7 @@ export default class Header<Props> extends React.Component<any> {
 					<div className="headerText">
 						<span className="name">Kevin Joseph</span><br />
 						Web Developer<br />
-						San Diego, CA, USA<br />
+						San Jose, CA, USA<br />
 					</div>
 
 				</header>

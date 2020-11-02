@@ -50,6 +50,56 @@ export default class WebPage<Props> extends React.Component<any> {
 				>
 
 					<WebExample
+						url="https://study.com/pages/About_Us.html"
+						title="Study.com About Us section"
+						launched="March 2020"
+					>
+
+						<p>
+							A revamp of the About Us section on the Study.com site, using
+						</p>
+
+						<ul>
+							<li>Babel</li>
+							<li>Express</li>
+							<li>MySQL</li>
+							<li>Node.js</li>
+							<li>npm</li>
+							<li>React</li>
+							<li>Redux</li>
+							<li>Sass</li>
+							<li>TypeScript / JavaScript</li>
+							<li>Webpack</li>
+						</ul>
+
+					</WebExample>
+
+					<WebExample
+						url="https://study.com/texes/index.html"
+						title="Study.com TEXES"
+						launched="August 2020"
+					>
+
+						<p>
+							One of many test-prep landing pages created while at Study.com.  Worked with designers to create a design system to offer to those creating the content for the pages to streamline development.
+						</p>
+
+						<ul>
+							<li>Babel</li>
+							<li>Express</li>
+							<li>MySQL</li>
+							<li>Node.js</li>
+							<li>npm</li>
+							<li>React</li>
+							<li>Redux</li>
+							<li>Sass</li>
+							<li>TypeScript / JavaScript</li>
+							<li>Webpack</li>
+						</ul>
+
+					</WebExample>
+
+					<WebExample
 						url="https://www.roll-cal.com/"
 						title="Roll-Cal"
 						launched="November 2018"
@@ -102,7 +152,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					<WebExample
 						url="https://kevinjoseph.net/"
 						title="KevinJoseph.net"
-						version="4.0"
+						version="4.0.1"
 						versionLaunched="December 2018"
 						launched="2004"
 						github="kevinjoseph.net"

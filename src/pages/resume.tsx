@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import SwipeableViews from "react-swipeable-views";
 
 import IconPDF from "images/file-pdf.svg";
@@ -74,6 +73,36 @@ export default class ResumePage<Props> extends React.Component<any> {
 				>
 
 					<ResumeEntry
+						company="Study.com"
+						start="November 2019"
+						current={true}
+						location="Mountain View, CA"
+						title="Front End Software Engineer"
+					>
+
+						<p>
+							Responsible for creating and updating a variety of external site pages as well as internal tools.  Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code and/or MySQL.
+						</p>
+
+						<p>Main technologies used:</p>
+						<ul>
+							<li>AngularJS</li>
+							<li>Bootstrap</li>
+							<li>CSS / Less</li>
+							<li>Git</li>
+							<li>Gulp</li>
+							<li>HTML 5</li>
+							<li>Java</li>
+							<li>JavaScript / TypeScript</li>
+							<li>JSP / JSTL</li>
+							<li>MySQL</li>
+							<li>RequireJS</li>
+							<li>Selenium</li>
+						</ul>
+
+					</ResumeEntry>
+
+					<ResumeEntry
 						company="Rain Bird"
 						start="August 2018"
 						end="February 2019"
@@ -97,26 +126,6 @@ export default class ResumePage<Props> extends React.Component<any> {
 							<li>Selenium</li>
 							<li>Yarn</li>
 						</ul>
-
-					</ResumeEntry>
-
-					<ResumeEntry
-						company="Hiatus"
-						start="April 2017"
-						end="August 2018"
-					>
-
-						<p>
-							In April 2017, I left Renovate America to take a short career break, spending three months traveling to over twenty countries.
-							Once I returned, I enjoyed a short break at home, then began to search for a new employment opportunity.
-							Unfortunately, it took much longer to find a new position than I originally expected.
-						</p>
-
-						<p>
-							While on my hiatus, I launched <a href="http://kjbranded.com/" target="_blank" rel="noopener noreferrer"> KJ Branded</a>,
-							my <Link to="/design">graphic design side business</Link>.
-							I also started working on <Link to="/web">web projects</Link> to begin learning technologies such as React and Redux.
-						</p>
 
 					</ResumeEntry>
 
