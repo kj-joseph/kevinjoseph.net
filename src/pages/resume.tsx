@@ -82,7 +82,7 @@ export default class ResumePage<Props> extends React.Component<any> {
 
 						<p>
 							Responsible for creating and updating a variety of external site pages as well as internal tools.
-							Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code and/or MySQL.
+							Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code, Selenium, and MySQL.
 						</p>
 
 						<p>Main technologies used:</p>

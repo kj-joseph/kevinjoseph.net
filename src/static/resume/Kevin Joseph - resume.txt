@@ -12,6 +12,17 @@ LinkedIn: https://www.linkedin.com/in/kjjoseph/
 PROFESSIONAL EXPERIENCE
 =======================
 
+Front End Software Engineer
+Study.com - Mountain View, CA
+November 2019 - (current)
+
+Responsible for creating and updating a variety of external site pages as well as internal tools. Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code, Selenium, and MySQL.
+
+Main Technologies:
+AngularJS, Bootstrap, CSS / Less, Git, Gulp, HTML 5, Java, JavaScript / TypeScript, JSP / JSTL, MySQL, RequireJS, Selenium
+
+-----
+
 Software Testing Engineer
 Rain Bird - San Diego, CA
 August 2018 - February 2019 (contract)
@@ -29,11 +40,12 @@ May 2015 - April 2017
 
 I worked on two teams during my time at Renovate America:
 
-The first was focused on an internal-facing toolkit for the call center. Much of the work focused on transferring functions from an outdated native Java desktop app to the web app. Most of the front-end work was within AngularJS (1.x) and Microsoft .NET Razor. Occasionally, I needed to modify the C#-based API in order to get data to ingest on the front end.
+The first was focused on an internal-facing toolkit for the call center. Much of the work focused on transferring functions from an outdated native Java desktop app to the web app. Most of the front-end work was in AngularJS (1.x) and Microsoft .NET Razor. Occasionally, I needed to modify the C#-based API.
 
-One major project during my time on this team was creating an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page that was not user friendly to an integrated part of the larger toolkit. The leaders of the call center were very happy with the new interface, noting that it would make that portion of their responsibilities much easier.
+One major project was creating an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page to an integrated part of the larger toolkit. The leaders of the call center were happy with the new interface, noting that it would make their duties much easier.
 
 The second team maintained the customer-facing marketing website. This site was built on SiteCore for content management, and also included AngularJS and Razor in the front-end stack.
+
 
 Main Technologies:
 AngularJS (1.x), Bootstrap, CSS / Sass, Git, Gulp, HTML 5, JavaScript, Kendo UI, Microsoft .NET Razor, Microsoft C#, Microsoft TFS
@@ -109,6 +121,27 @@ CSS, HTML, JavaScript, XML / XSLT, YUI
 ============
 WEB EXAMPLES
 ============
+
+Study.com About Us section
+https://study.com/pages/About_Us.html
+
+A revamp of the About Us section on the Study.com site, using JSP, JSTL, and Less.
+
+Main Technologies:
+JSP / JSTL, Less, TypeScript / JavaScript
+
+-----
+
+Study.com TEXES landing page
+https://study.com/texes
+
+Searchable calendar for roller derby events. Allows users to create accounts to add their own events.
+I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
+
+Main Technologies:
+JSP / JSTL, Less, TypeScript / JavaScript
+
+-----
 
 Roll-Cal
 https://www.roll-cal.com

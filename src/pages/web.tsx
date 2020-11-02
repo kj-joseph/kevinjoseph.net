@@ -56,27 +56,20 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							A revamp of the About Us section on the Study.com site, using
+							A revamp of the About Us section on the Study.com site, using JSP, JSTL, and Less.
 						</p>
 
 						<ul>
-							<li>Babel</li>
-							<li>Express</li>
-							<li>MySQL</li>
-							<li>Node.js</li>
-							<li>npm</li>
-							<li>React</li>
-							<li>Redux</li>
-							<li>Sass</li>
+							<li>JSP / JSTL</li>
+							<li>Less</li>
 							<li>TypeScript / JavaScript</li>
-							<li>Webpack</li>
 						</ul>
 
 					</WebExample>
 
 					<WebExample
-						url="https://study.com/texes/index.html"
-						title="Study.com TEXES"
+						url="https://study.com/texes"
+						title="Study.com TEXES landing page"
 						launched="August 2020"
 					>
 
@@ -86,16 +79,9 @@ export default class WebPage<Props> extends React.Component<any> {
 						</p>
 
 						<ul>
-							<li>Babel</li>
-							<li>Express</li>
-							<li>MySQL</li>
-							<li>Node.js</li>
-							<li>npm</li>
-							<li>React</li>
-							<li>Redux</li>
-							<li>Sass</li>
+							<li>JSP / JSTL</li>
+							<li>Less</li>
 							<li>TypeScript / JavaScript</li>
-							<li>Webpack</li>
 						</ul>
 
 					</WebExample>
