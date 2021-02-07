@@ -75,7 +75,7 @@ export default class ResumePage<Props> extends React.Component<any> {
 					<ResumeEntry
 						company="Study.com"
 						start="November 2019"
-						current={true}
+						end="February 2021"
 						location="Mountain View, CA"
 						title="Front End Software Engineer"
 					>
@@ -207,22 +207,6 @@ export default class ResumePage<Props> extends React.Component<any> {
 							<li>RequireJS</li>
 							<li>Signal Tag Manager</li>
 						</ul>
-
-					</ResumeEntry>
-
-					<ResumeEntry
-						company="Target"
-						start="June 2013"
-						end="August 2013"
-						location="Minneapolis, MN"
-						title="Web Developer"
-						contract="TEKSystems"
-					>
-
-						<p>
-							While I was hired to code solutions for Adobe Analytics tracking, the position ended up being more of a business analysis role,
-							managing tracking needs for Target.com.
-						</p>
 
 					</ResumeEntry>
 

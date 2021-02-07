@@ -1,5 +1,5 @@
 Kevin Joseph
-San Diego, CA
+San Jose, CA
 
 Email: kevin.p.joseph@gmail.com
 Phone: 612-597-2426
@@ -14,7 +14,7 @@ PROFESSIONAL EXPERIENCE
 
 Front End Software Engineer
 Study.com - Mountain View, CA
-November 2019 - (current)
+November 2019 - February 2021
 
 Responsible for creating and updating a variety of external site pages as well as internal tools. Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code, Selenium, and MySQL.
 
@@ -62,14 +62,6 @@ At one point we completely overhauled our codebase, moving from two large, mostl
 
 Main Technologies:
 Adobe Analytics, Git, HTML, JavaScript, Jenkins, jQuery, Lodash, RequireJS, Signal Tag Manager
-
------
-
-Web Developer
-Target - Minneapolis, MN
-June 2013 - August 2013 (contract)
-
-While I was hired to code solutions for Adobe Analytics tracking, the position ended up being more of a business analysis role, managing tracking needs for Target.com.
 
 -----
 
@@ -135,8 +127,7 @@ JSP / JSTL, Less, TypeScript / JavaScript
 Study.com TEXES landing page
 https://study.com/texes
 
-Searchable calendar for roller derby events. Allows users to create accounts to add their own events.
-I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
+One of a number of "long-form hubs" I created while at Study.com, based on designs from in-house designers.
 
 Main Technologies:
 JSP / JSTL, Less, TypeScript / JavaScript
@@ -146,8 +137,7 @@ JSP / JSTL, Less, TypeScript / JavaScript
 Roll-Cal
 https://www.roll-cal.com
 
-Searchable calendar for roller derby events. Allows users to create accounts to add their own events.
-I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
+Searchable calendar for roller derby events. Allows users to create accounts to add their own events. I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
 
 Main Technologies:
 Babel, Express, MySQL, Node.js, npm, React, Redux, Sass, TypeScript / JavaScript, Webpack
