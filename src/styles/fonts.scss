@@ -1,4 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:700|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Roboto:wght@400;700&display=swap");
 
-$roboto: Roboto, sans-serif;
-$ubuntu: Ubuntu, $roboto;
+$font-normal: Roboto, sans-serif;
+$font-heading: Kanit, $font-normal;
+
+@mixin font-normal {
+	font-family: $font-normal;
+	font-weight: 400;
+}
+
+@mixin font-normal-bold {
+	font-family: $font-normal;
+	font-weight: 700;
+}
+
+@mixin font-heading {
+	font-family: $font-heading;
+	font-weight: 500;
+}
+
+@mixin font-heading-bold {
+	font-family: $font-heading;
+	font-weight: 700;
+}
+

@@ -6,11 +6,11 @@ nav {
 	height: calc(100% - 121px);
 	width: calc(100% - 40px);
 	overflow-y: auto;
-	font-family: $ubuntu;
+	font-family: $font-heading;
 	font-size: 2rem;
 	padding: 10px 10px;
 	background: white;
-	border: 10px solid $blue;
+	border: 10px solid $color-blue;
 	transition: left .2s linear;
 
 	&.open {
@@ -20,16 +20,16 @@ nav {
 	a {
 		display: block;
 		font-size: 2rem;
-		color: $gray;
+		color: $color-gray;
 		text-decoration: none;
 		padding: 10px 10px;
 
 		&.active {
-			color: $blue;
+			color: $color-blue;
 		}
 
 		&:hover {
-			color: $blue;
+			color: $color-blue;
 		}
 
 	}
@@ -37,7 +37,7 @@ nav {
 	.external {
 		margin-top: 10px;
 		padding: 20px 0 0 10px;
-		border-top: 1px solid $ghost;
+		border-top: 1px solid $color-ghost;
 
 		a {
 			display: inline-block;
@@ -49,12 +49,12 @@ nav {
 
 				svg {
 					height: 50px;
-					fill: $gray;
+					fill: $color-gray;
 				}
 			}
 
 			&:hover svg {
-				fill: $blue;
+				fill: $color-blue;
 			}
 
 		}

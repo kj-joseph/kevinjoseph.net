@@ -3,8 +3,8 @@
 	display: flex;
 	text-align: center;
 	margin: 20px 0;
-	border-top: 1px solid $ghost;
-	border-bottom: 1px solid $ghost;
+	border-top: 1px solid $color-ghost;
+	border-bottom: 1px solid $color-ghost;
 
 	a {
 		flex-grow: 1;
@@ -13,14 +13,14 @@
 
 		svg {
 			height: 25px;
-			fill: $gray;
+			fill: $color-gray;
 		}
 
 		&.disabled {
 			cursor: not-allowed;
 
 			svg {
-				fill: $ghost;
+				fill: $color-ghost;
 			}
 		}
 

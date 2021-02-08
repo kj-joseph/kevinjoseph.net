@@ -14,18 +14,18 @@
 
 @keyframes fadein {
 	0% {
-		color: $blue;
+		color: $color-blue;
 		opacity: 0;
 	}
     100% {
-    	color: $black;
+    	color: $color-black;
     	opacity: 1;
     }
 }
 
 html {
 	height: 100%;
-	background: $white;
+	background: $color-white;
 
 	body {
 

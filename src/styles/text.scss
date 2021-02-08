@@ -1,18 +1,18 @@
 html {
-	font-family: $roboto;
+	@include font-normal;
 }
 
 h1 {
-	font-family: $ubuntu;
+	font-family: $font-heading;
 	font-size: 2rem;
 	line-height: 1.1em;
 	margin-bottom: 1rem;
 }
 
 h2 {
-	font-family: $ubuntu;
+	font-family: $font-heading;
 	font-size: 1.6rem;
-	color: $blue;
+	color: $color-blue;
 	line-height: 1.1em;
 }
 
@@ -25,7 +25,7 @@ h3 {
 
 h4 {
 	font-weight: bold;
-	color: $gray;
+	color: $color-gray;
 	line-height: 1.1em;
 	margin-bottom: 1rem;
 }
@@ -36,5 +36,5 @@ p {
 }
 
 a {
-	color: $blue;
+	color: $color-blue;
 }

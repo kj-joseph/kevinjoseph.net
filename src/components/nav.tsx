@@ -5,7 +5,7 @@ import Behance from "images/behance-square.svg";
 import GitHub from "images/github-square.svg";
 import LinkedIn from "images/linkedin.svg";
 
-import ReactSVG from "react-svg";
+import { ReactSVG } from "react-svg";
 
 interface ISiteMenuProps {
 	open: boolean;

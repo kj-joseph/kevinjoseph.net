@@ -1,5 +1,5 @@
 import React from "react";
-import ReactSVG from "react-svg";
+import { ReactSVG } from "react-svg";
 
 import menuIcon from "images/bars.svg";
 
@@ -29,24 +29,11 @@ export default class Header<Props> extends React.Component<any> {
 
 				<header>
 
-					<ReactSVG
-						className={`menuIcon${this.state.menuOpen ? " open" : ""}`}
-						src={menuIcon}
-						onClick={this.toggleMenu}
-					/>
-
-					<div className="headerText">
-						<span className="name">Kevin Joseph</span><br />
-						Web Developer<br />
-						San Jose, CA, USA<br />
-					</div>
+					<div className="header--name">Kevin Joseph</div>
+					<div className="header--title">Web Developer</div>
+					<div className="header--location">San Jose, CA</div>
 
 				</header>
-
-				<Nav
-					open={this.state.menuOpen}
-					toggle={this.toggleMenu}
-				/>
 
 			</>
 

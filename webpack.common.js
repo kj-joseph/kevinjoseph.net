@@ -98,7 +98,11 @@ module.exports = {
 			},
 			{
 				test: /\.(css|scss|sass)$/,
-				loader: ["style-loader", "css-loader", "sass-loader"],
+				use: [
+					"style-loader",
+					"css-loader",
+					"sass-loader",
+				]
 			},
 			{
 				test: /\.ico$/,
