@@ -21,7 +21,7 @@ export default class Header extends React.Component<IHeaderProps> {
 				<div className="header__details">
 					<div className="header__name">Kevin Joseph</div>
 					<div className="header__title">Web Developer</div>
-					<div className="header__location">San Jose, CA</div>
+					<div className="header__location">San Jos&eacute;, CA</div>
 				</div>
 
 				<nav role="navigation">
