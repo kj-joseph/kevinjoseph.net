@@ -1,5 +1,7 @@
 @import "../../node_modules/css-reset-and-normalize-sass/scss/reset-and-normalize";
 
+@import "mixins";
+
 @import "colors";
 @import "breakpoints";
 
@@ -9,6 +11,8 @@
 @import "corner";
 @import "list";
 @import "slides";
+
+@import "links";
 
 @import "header";
 
@@ -31,7 +35,7 @@ html {
 
 		#content {
 
-			margin: 95px 15px 15px;
+			padding: 15px;
 
 			> div {
 
@@ -44,7 +48,7 @@ html {
 
 	}
 
-	&.noscroll {
+	&.nav-open {
 		width: 100%;
 		overflow: hidden;
 	}

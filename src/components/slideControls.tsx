@@ -18,7 +18,7 @@ export default class SlideControls extends React.Component<ISlideControlProps> {
 		super(props);
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 

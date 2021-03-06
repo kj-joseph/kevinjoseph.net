@@ -17,8 +17,8 @@ module.exports = {
 
 	resolve: {
 		modules: [
+			node_dir,
 			src_dir,
-			"node_modules",
 		],
 		extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
 	},
@@ -117,7 +117,6 @@ module.exports = {
 				]
 			},
 			{
-				exclude: /flag-icon-css/,
 				test: /\.(gif|png|jpe?g|svg)$/i,
 				use: [
 					{
@@ -129,32 +128,6 @@ module.exports = {
 					}
 				],
 			},
-			{
-				include: /4x3/,
-				test: /\.(gif|png|jpe?g|svg)$/i,
-				use: [
-					{
-						loader: "file-loader",
-						options: {
-							name: "[name].[ext]",
-							outputPath: "images/flags/4x3",
-						}
-					}
-				],
-			},
-			{
-				include: /1x1/,
-				test: /\.(gif|png|jpe?g|svg)$/i,
-				use: [
-					{
-						loader: "file-loader",
-						options: {
-							name: "[name].[ext]",
-							outputPath: "images/flags/1x1",
-						}
-					}
-				],
-			}
 		],
 	},
 

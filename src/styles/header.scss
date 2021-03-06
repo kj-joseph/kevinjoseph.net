@@ -1,10 +1,24 @@
 @import "nav";
 
 header {
-	position: fixed;
+
+	height: 130px;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	position: sticky;
 	top: 0;
-	left: 0;
-	z-index: 700;
+	z-index: 10;
+	padding: 0 24px;
+	background: $color-black;
+	@include transitionAll;
+
+	.nav-open & {
+		height: 100vh;
+	}
+
+}
+
+.header__details {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	grid-template-areas: "title name location";
@@ -13,30 +27,30 @@ header {
 	width: 100%;
 	@include font-heading;
 	font-size: 1.5rem;
-	color: $color-white;
-	padding: 12px 0;
-	background: $color-black;
-	border-bottom: 1px solid $color-white;
+	padding-top: 18px;
 }
 
-.header--name {
+.header__name {
 	grid-area: name;
 	align-self: center;
 	@include font-heading-bold;
 	font-size: 3rem;
 	text-align: center;
+	color: $color-white;
 }
 
-.header--title {
+.header__title {
 	grid-area: title;
 	text-align: right;
 	padding-bottom: 8px;
+	color: $color-gray;
 }
 
-.header--location {
+.header__location {
 	grid-area: location;
 	text-align: left;
 	padding-bottom: 8px;
+	color: $color-gray;
 }
 
 

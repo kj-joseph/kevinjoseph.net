@@ -11,7 +11,7 @@
   "repository": "github:kj-joseph/kevinjoseph.net",
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all lint clearBuildDir webpack:local",
+    "build": "npm-run-all clearBuildDir webpack:local",
     "build:dev": "npm-run-all lint clearBuildDir webpack:dev",
     "build:prod": "npm-run-all lint clearBuildDir webpack:prod",
     "clearBuildDir": "mkdir -p build && rm -rf build/*",

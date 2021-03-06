@@ -14,6 +14,7 @@
 		svg {
 			height: 25px;
 			fill: $color-gray;
+			@include transitionAll(.2s);
 		}
 
 		&.disabled {
@@ -22,6 +23,10 @@
 			svg {
 				fill: $color-ghost;
 			}
+		}
+
+		&:hover svg {
+			fill: $color-blue;
 		}
 
 	}
@@ -41,6 +46,24 @@
 			font-style: italic;
 			margin-top: -.5em;
 		}
+
 	}
+
+	ul {
+
+		@include respond-to(xsmall) {
+			columns: 2;
+		}
+
+		@include respond-to(medium) {
+			columns: 3;
+		}
+
+		@include respond-to(large) {
+			columns: 4;
+		}
+
+	}
+
 
 }

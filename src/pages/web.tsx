@@ -9,7 +9,7 @@ interface IWebState {
 	entryIndex: number;
 }
 
-export default class WebPage<Props> extends React.Component<any> {
+export default class WebPage<Props> extends React.Component<Props> {
 
 	state: IWebState = {
 		entryCount: 5,
@@ -23,13 +23,13 @@ export default class WebPage<Props> extends React.Component<any> {
 		this.handleChange = this.handleChange.bind(this);
 	}
 
-	componentDidMount() {
+	componentDidMount(): void {
 
 		window.scrollTo(0, 0);
 
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 			<div>
@@ -74,7 +74,7 @@ export default class WebPage<Props> extends React.Component<any> {
 					>
 
 						<p>
-							One of a number of "long-form hubs" I created while at Study.com, based on designs from in-house designers.
+							One of a number of &quot;long-form hubs&quot; I created while at Study.com, based on designs from in-house designers.
 						</p>
 
 						<ul>

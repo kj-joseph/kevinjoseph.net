@@ -11,7 +11,7 @@
 			fill: $color-gray;
 			vertical-align: middle;
 			margin-left: 10px;
-
+			@include transitionAll(.2s);
 		}
 
 	}
