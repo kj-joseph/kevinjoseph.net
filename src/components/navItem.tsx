@@ -30,9 +30,9 @@ export default class ResumeEntry extends React.Component<INavItemProps> {
 
 				<span className="nav__item__header">{this.props.name}</span>
 
-				{ this.props.description ?
+				{ this.props.children ?
 
-					<span className="nav__item__description">{this.props.description}</span>
+					<span className="nav__item__description">{this.props.children}</span>
 
 					: null
 				}

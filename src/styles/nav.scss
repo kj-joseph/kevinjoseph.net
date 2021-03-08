@@ -1,9 +1,13 @@
 nav {
+	display: none;
 
-	display: grid;
-	margin: 24px 24px 24px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 48px;
+	@include respond-to(small) {
+		display: grid;
+		grid-template-rows: none;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 48px;
+		margin: 22px auto 0;
+	}
 
 	a.nav__item {
 		@include font-nav;
@@ -12,7 +16,7 @@ nav {
 		@include transitionAll;
 
 		.nav__item__header {
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 			color: $color-gray;
 			letter-spacing: .4em;
 			text-transform: uppercase;
@@ -41,37 +45,63 @@ nav {
 
 		.nav-open & {
 			display: grid;
-			grid-template-rows: 40% 60%;
-			grid-gap: 1.2em;
+			grid-template-rows: 1fr;
 			height: calc(100% - 14px);
 			margin-top: 0;
 			margin-bottom: 18px;
 			background: url("../images/nav-bg.svg") repeat center;
-			background-size: 90%;
+			background-size: 40%;
 			border: 7px solid $color-gray;
 			@include transitionAll;
 
+			@include respond-to(small) {
+				grid-template-rows: 4fr 5fr;
+				grid-gap: 1em;
+			}
+
+			@include respond-to(medium) {
+				grid-template-rows: 5fr 7fr;
+				grid-gap: 1.2em;
+				background-size: 70%;
+			}
+
 			.nav__item__header {
 				display: block;
-				align-self: end;
-				font-size: 1.5rem;
+				align-self: center;
+				font-size: 1.4rem;
 				margin: 0 14px;
+
+				@include respond-to(small) {
+					font-size: 1.5rem;
+					align-self: end;
+				}
+
 			}
 
 			.nav__item__description {
-				display: block;
-				color: $color-gray;
-				margin-top: 1.2em;
-				line-height: 1.5em;
-				margin: 0 14px;
+
+				@include respond-to(small) {
+					display: block;
+					color: $color-gray;
+					line-height: 1.5em;
+					margin: 0 auto;
+					max-width: 80%;
+					padding-bottom: .5em;
+				}
+
 			}
+
 
 			&:hover {
 				border-color: $color-blue;
-				background-size: 125%;
+				background-size: 65%;
+
+				@include respond-to(medium) {
+					background-size: 115%;
+				}
 
 				.nav__item__header {
-					font-size: 1.7rem;
+					font-size: 1.7em;
 				}
 
 			}
@@ -81,7 +111,30 @@ nav {
 	}
 
 	.nav-open & {
+		display: grid;
+		margin: 36px 24px 24px;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: none;
+		grid-gap: 36px;
 		margin-bottom: 48px;
+
+		// hack for mobile chrome; add 56px margin to bottom
+		@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+			margin-bottom: calc(48px + 56px);
+		}
+
+		@include respond-to(medium) {
+			display: grid;
+			grid-template-rows: none;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 48px;
+
+			// override hack for mobile chrome
+			@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+				margin-bottom: 48px;
+			}
+		}
+
 	}
 
 }
