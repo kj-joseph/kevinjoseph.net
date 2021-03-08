@@ -12,8 +12,5 @@ module.exports = merge.merge(common, {
 				sourceMap: true,
 				"process.env.NODE_ENV": JSON.stringify("production")
 			}),
-		new webpack.DefinePlugin({
-			"process.env.API_URL": JSON.stringify("/api/"),
-		}),
 	]
 });
