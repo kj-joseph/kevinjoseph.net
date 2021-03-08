@@ -3,8 +3,8 @@
 	display: flex;
 	text-align: center;
 	margin: 20px 0;
-	border-top: 1px solid $ghost;
-	border-bottom: 1px solid $ghost;
+	border-top: 1px solid $color-ghost;
+	border-bottom: 1px solid $color-ghost;
 
 	a {
 		flex-grow: 1;
@@ -13,15 +13,20 @@
 
 		svg {
 			height: 25px;
-			fill: $gray;
+			fill: $color-gray;
+			@include transitionAll(.2s);
 		}
 
 		&.disabled {
 			cursor: not-allowed;
 
 			svg {
-				fill: $ghost;
+				fill: $color-ghost;
 			}
+		}
+
+		&:hover svg {
+			fill: $color-blue;
 		}
 
 	}
@@ -41,6 +46,24 @@
 			font-style: italic;
 			margin-top: -.5em;
 		}
+
 	}
+
+	ul {
+
+		@include respond-to(xsmall) {
+			columns: 2;
+		}
+
+		@include respond-to(medium) {
+			columns: 3;
+		}
+
+		@include respond-to(large) {
+			columns: 4;
+		}
+
+	}
+
 
 }

@@ -1,0 +1,37 @@
+.external-links {
+	list-style: none;
+	margin: .5rem 0 0 0;
+	padding-left: 0;
+
+	li a {
+
+		div {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		svg {
+			width: 24px;
+			margin-right: 8px;
+			fill: $color-gray;
+			@include transitionAll;
+		}
+
+		&:hover {
+
+			.external-links__linkedin svg {
+				fill: #0077b5;
+			}
+
+			.external-links__github svg {
+				fill: #24292e;
+			}
+
+		}
+
+
+
+
+	}
+
+}

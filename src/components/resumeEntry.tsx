@@ -20,7 +20,7 @@ export default class ResumeEntry extends React.Component<IResumeEntryProps> {
 		super(props);
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 
@@ -34,12 +34,14 @@ export default class ResumeEntry extends React.Component<IResumeEntryProps> {
 						<h3>
 							{this.props.title}
 						</h3>
-					: null}
+						: null
+					}
 					{this.props.contract ?
 						<p className="parenthetical">
 							(contract via {this.props.contract})
 						</p>
-					: null}
+						: null
+					}
 					<h4>
 						{this.props.start} &mdash; {this.props.end}{this.props.current ? " (current)" : null}
 						{this.props.location ?
@@ -47,7 +49,8 @@ export default class ResumeEntry extends React.Component<IResumeEntryProps> {
 								<br />
 								{this.props.location}
 							</>
-						: null}
+							: null
+						}
 					</h4>
 				</div>
 

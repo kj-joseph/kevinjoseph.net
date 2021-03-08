@@ -4,7 +4,7 @@ import IconFirst from "images/angle-double-left.svg";
 import IconLast from "images/angle-double-right.svg";
 import IconBack from "images/angle-left.svg";
 import IconNext from "images/angle-right.svg";
-import ReactSVG from "react-svg";
+import { ReactSVG } from "react-svg";
 
 interface ISlideControlProps {
 	changeSlide: (event: React.MouseEvent<HTMLAnchorElement>) => void;
@@ -18,7 +18,7 @@ export default class SlideControls extends React.Component<ISlideControlProps> {
 		super(props);
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 

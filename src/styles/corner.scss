@@ -1,23 +1,23 @@
 .corner {
 	float: right;
 	text-align: right;
-	color: $gray;
+	color: $color-gray;
 
 	div {
 		display: inline;
 
 		svg {
 			height: 2.5rem;
-			fill: $gray;
+			fill: $color-gray;
 			vertical-align: middle;
 			margin-left: 10px;
-
+			@include transitionAll(.2s);
 		}
 
 	}
 
 	a:hover svg {
-		fill: $blue;
+		fill: $color-blue;
 	}
 
 }

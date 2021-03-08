@@ -1,18 +1,18 @@
 import React from "react";
 
-export default class Error404<Props> extends React.Component<any, any, any> {
+export default class Error404<Props> extends React.Component<Props> {
 
 	constructor(props: Props) {
 		super(props);
 	}
 
-	componentDidMount() {
+	componentDidMount(): void {
 
 		window.scrollTo(0, 0);
 
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 			<div>

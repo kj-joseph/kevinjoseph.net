@@ -1,40 +1,47 @@
 html {
-	font-family: $roboto;
+	@include font-normal;
 }
 
 h1 {
-	font-family: $ubuntu;
+	@include font-heading-bold;
 	font-size: 2rem;
-	line-height: 1.1em;
+	line-height: 1.3em;
 	margin-bottom: 1rem;
 }
 
 h2 {
-	font-family: $ubuntu;
+	@include font-heading;
 	font-size: 1.6rem;
-	color: $blue;
-	line-height: 1.1em;
+	color: $color-blue;
+	line-height: 1.3em;
 }
 
 h3 {
+	@include font-normal-bold;
 	font-size: 1.2rem;
-	font-weight: bold;
-	line-height: 1.1em;
+	line-height: 1.3em;
 	margin-bottom: .6rem;
 }
 
 h4 {
-	font-weight: bold;
-	color: $gray;
-	line-height: 1.1em;
+	@include font-normal-bold;
+	color: $color-gray;
+	line-height: 1.3em;
 	margin-bottom: 1rem;
 }
 
 p {
-	line-height: 1.1em;
+	line-height: 1.5em;
 	margin-bottom: 1em;
 }
 
 a {
-	color: $blue;
+	color: $color-gray;
+	font-weight: bold;
+	@include transitionAll(.2s);
+
+	&:hover {
+		color: $color-blue;
+	}
+
 }

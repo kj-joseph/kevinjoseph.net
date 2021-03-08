@@ -20,7 +20,7 @@ export default class WebExample extends React.Component<IWebExampleProps> {
 		super(props);
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 
@@ -34,29 +34,32 @@ export default class WebExample extends React.Component<IWebExampleProps> {
 						<h4>
 							Launched {this.props.launched}
 						</h4>
-					: null}
+						: null
+					}
 					{this.props.version ?
 						<p className="parenthetical">
 							Version {this.props.version}
 							{this.props.versionLaunched ?
-							 	` launched ${this.props.versionLaunched}`
-							: null}
+								` launched ${this.props.versionLaunched}`
+								: null
+							}
 						</p>
-					: null}
+						: null
+					}
 
 					{this.props.inactive ?
 						<p className="parenthetical">
 							(no longer active)
 						</p>
-					: null}
+						: null
+					}
 
 					<p>
 						{this.props.url ?
 							<a href={this.props.url} target="_blank" rel="noopener noreferrer">
 								Visit Site
 							</a>
-						:
-							null
+							: null
 						}
 						{this.props.github ?
 							<>
@@ -65,7 +68,8 @@ export default class WebExample extends React.Component<IWebExampleProps> {
 									GitHub repository
 								</a>
 							</>
-						: null}
+							: null
+						}
 					</p>
 
 				</div>

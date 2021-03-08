@@ -4,7 +4,7 @@ import SwipeableViews from "react-swipeable-views";
 import IconPDF from "images/file-pdf.svg";
 import IconText from "images/file-txt.svg";
 import IconWord from "images/file-word.svg";
-import ReactSVG from "react-svg";
+import { ReactSVG } from "react-svg";
 
 import ResumeEntry from "components/resumeEntry";
 import SlideControls from "components/slideControls";
@@ -14,7 +14,7 @@ interface IResumeState {
 	entryIndex: number;
 }
 
-export default class ResumePage<Props> extends React.Component<any> {
+export default class ResumePage<Props> extends React.Component<Props, IResumeState> {
 
 	state: IResumeState = {
 		entryCount: 9,
@@ -28,18 +28,19 @@ export default class ResumePage<Props> extends React.Component<any> {
 		this.handleChange = this.handleChange.bind(this);
 	}
 
-	componentDidMount() {
+	componentDidMount(): void {
 
 		window.scrollTo(0, 0);
 
 	}
 
-	render() {
+	render(): JSX.Element {
 
 		return (
 			<div>
 
 				<div className="corner">
+
 					<a title="Download resume in PDF format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.pdf">
 						<ReactSVG
 							src={IconPDF}

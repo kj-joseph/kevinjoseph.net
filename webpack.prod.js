@@ -5,15 +5,12 @@ const MinifyPlugin = require("babel-minify-webpack-plugin");
 const path = require("path");
 const build_dir = path.resolve(__dirname, "build");
 
-module.exports = merge(common, {
+module.exports = merge.merge(common, {
 	plugins: [
 		new MinifyPlugin({},{}),
 		new webpack.DefinePlugin({
 				sourceMap: true,
 				"process.env.NODE_ENV": JSON.stringify("production")
 			}),
-		new webpack.DefinePlugin({
-			"process.env.API_URL": JSON.stringify("/api/"),
-		}),
 	]
 });
