@@ -138,8 +138,8 @@ export default class WebPage<Props> extends React.Component<Props> {
 					<WebExample
 						url="https://kevinjoseph.net/"
 						title="KevinJoseph.net"
-						version="4.0.1"
-						versionLaunched="December 2018"
+						version="5.0.0"
+						versionLaunched="March 2021"
 						launched="2004"
 						github="kevinjoseph.net"
 					>
