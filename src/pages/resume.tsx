@@ -76,7 +76,7 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					<ResumeEntry
 						company="Ezoic"
 						start="May 2021"
-						current=true
+						current={true}
 						location="Carlsbad, CA"
 						title="Software Engineer"
 					>
