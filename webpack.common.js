@@ -25,7 +25,7 @@ module.exports = {
 
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Kevin Joseph | Web Developer | San Jose, California USA",
+			title: "Kevin Joseph | Web Developer | San Diego, California USA",
 			template: "src/static/index.html",
 			minify: false,
 		})
