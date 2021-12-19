@@ -1,17 +1,18 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
-const path = require("path");
-const build_dir = path.resolve(__dirname, "build");
+
+// TODO: Figure out why watch isn't working
 
 module.exports = merge.merge(common, {
-	devServer: {
-		contentBase: build_dir,
-		disableHostCheck: true,
+    devServer: {
 		historyApiFallback: true,
-		inline: true,
-		open: false,
 		host: "0.0.0.0",
-		port: 8767
-	}
+		open: false,
+		port: 8767,
+        watchFiles: ["/src/**"],
+	},
+    watchOptions: {
+        ignored: /node_modules/,
+    },
 });

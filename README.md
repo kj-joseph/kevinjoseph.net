@@ -1,3 +1,6 @@
 # KevinJoseph.net
 
-Personal site uploaded as code example.  Updated December 2018 to use React, Webpack, and Babel.
+Personal site uploaded as code example.
+
+December 2021: Updated details, updated dependencies
+March 2021: New layout
