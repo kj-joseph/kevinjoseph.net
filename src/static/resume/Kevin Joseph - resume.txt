@@ -1,5 +1,5 @@
 Kevin Joseph
-San Jose, CA
+San Diego area, CA
 
 Email: kevin.p.joseph@gmail.com
 Phone: 612-597-2426
@@ -11,6 +11,17 @@ LinkedIn: https://www.linkedin.com/in/kjjoseph/
 =======================
 PROFESSIONAL EXPERIENCE
 =======================
+
+Software Engineer
+Study.com - Carlsbad, CA
+May 2021 - (present)
+
+Working on a variety of front-end and back-end systems for internal and customer-facing tools.
+
+Main Technologies:
+CSS, Git, Go, HTML 5, JavaScript / TypeScript, MySQL, PHP, Vue
+
+-----
 
 Front End Software Engineer
 Study.com - Mountain View, CA
