@@ -8,7 +8,7 @@ matrix:
   - name: "kjnet"
     language: node_js
     node_js:
-    - 16
+    - stable
     cache:
       directories:
       - node_modules
