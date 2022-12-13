@@ -76,17 +76,18 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					<ResumeEntry
 						company="Ezoic"
 						start="May 2021"
-						current={true}
+						end="December 2022"
 						location="Carlsbad, CA"
 						title="Software Engineer"
 					>
 
 						<p>
-							Working on a variety of front-end and back-end systems for internal and customer-facing tools.
+                        Worked on a wide variety of front- and back-end systems/tools, for both internal and external customer use.
 						</p>
 
 						<p>Main technologies used:</p>
 						<ul>
+                            <li>Amazon Web Services</li>
 							<li>CSS</li>
 							<li>Git</li>
 							<li>Go</li>
@@ -98,7 +99,7 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 						</ul>
 
 					</ResumeEntry>
-					
+
 					<ResumeEntry
 						company="Study.com"
 						start="November 2019"
