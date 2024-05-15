@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 interface INavItemProps {
+	children?: React.ReactNode;
 	classes?: string[];
 	description?: string;
 	exactMatch?: boolean;

@@ -1,6 +1,7 @@
 import React from "react";
 
 interface IResumeEntryProps {
+	children?: React.ReactNode;
 	company: string;
 	contract?: string;
 	current: boolean;

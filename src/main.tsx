@@ -1,29 +1,30 @@
 import { createBrowserHistory } from "history";
 import React from "react";
-import { render } from "react-dom";
+import ReactDOM from "react-dom/client";
 import { Route, Router, Switch } from "react-router-dom";
+// import fs from "fs";
 
 const history = createBrowserHistory();
 
 // load site css
-import "styles/main.scss";
+import "@/styles/main.scss";
 
 // load static files
-import "static/.htaccess";
-require.context("static/resume", false);
-require.context("images/favicon", true);
-import "static/robots.txt";
+// import "@/static/.htaccess";
+// fs.readdir("@/static/resume", {},  () => {});
+// fs.readdir("@/images/favicon", {},  () => {});
+// import "@/static/robots.txt";
 
 // import page classes
-import ContactPage from "pages/contact";
-import HomePage from "pages/homepage";
-import ResumePage from "pages/resume";
-import WebPage from "pages/web";
+import ContactPage from "@/pages/contact";
+import HomePage from "@/pages/homepage";
+import ResumePage from "@/pages/resume";
+import WebPage from "@/pages/web";
 
-import NotFoundPage from "status/404";
+import NotFoundPage from "@/status/404";
 
 // import compoments
-import Header from "components/header";
+import Header from "@/components/header";
 
 interface IIndexState {
 	navOpen: boolean;
@@ -100,7 +101,7 @@ class AppRouter<Props> extends React.Component<Props, IIndexState> {
 
 }
 
-
-render(
-	<AppRouter />,
-	document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
+	<AppRouter />
+);
