@@ -1,8 +1,8 @@
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 
-import SlideControls from "components/slideControls";
-import WebExample from "components/webExample";
+import SlideControls from "@/components/slideControls";
+import WebExample from "@/components/webExample";
 
 interface IWebState {
 	entryCount: number;

@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 
-import NavItem from "components/navItem";
+import NavItem from "@/components/navItem";
 
-import closeMenuButton from "images/times.svg";
-import menuButton from "images/bars.svg";
+import closeMenuButton from "@/images/times.svg";
+import menuButton from "@/images/bars.svg";
 
 interface IHeaderProps {
 	setNavStateFunction: (newNavState: boolean) => void;
@@ -27,7 +27,7 @@ export default class Header extends React.Component<IHeaderProps> {
 				<div className="header__details">
 					<div className="header__name">Kevin Joseph</div>
 					<div className="header__title">Web Developer</div>
-					<div className="header__location">San Diego area, CA</div>
+					<div className="header__location">San Diego, CA</div>
 
 					<div className="header__menu-button">
 						<ReactSVG

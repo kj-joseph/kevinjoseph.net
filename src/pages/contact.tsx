@@ -1,8 +1,8 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 
-import GitHub from "images/github-square.svg";
-import LinkedIn from "images/linkedin.svg";
+import GitHub from "@/images/github-square.svg";
+import LinkedIn from "@/images/linkedin.svg";
 
 export default class ContactPage<Props> extends React.Component<Props> {
 

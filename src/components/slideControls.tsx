@@ -1,9 +1,9 @@
 import React from "react";
 
-import IconFirst from "images/angle-double-left.svg";
-import IconLast from "images/angle-double-right.svg";
-import IconBack from "images/angle-left.svg";
-import IconNext from "images/angle-right.svg";
+import IconFirst from "@/images/angle-double-left.svg";
+import IconLast from "@/images/angle-double-right.svg";
+import IconBack from "@/images/angle-left.svg";
+import IconNext from "@/images/angle-right.svg";
 import { ReactSVG } from "react-svg";
 
 interface ISlideControlProps {

@@ -1,13 +1,12 @@
 import React from "react";
 import SwipeableViews from "react-swipeable-views";
 
-import IconPDF from "images/file-pdf.svg";
-import IconText from "images/file-txt.svg";
-import IconWord from "images/file-word.svg";
+import IconPDF from "@/images/file-pdf.svg";
+import IconWord from "@/images/file-word.svg";
 import { ReactSVG } from "react-svg";
 
-import ResumeEntry from "components/resumeEntry";
-import SlideControls from "components/slideControls";
+import ResumeEntry from "@/components/resumeEntry";
+import SlideControls from "@/components/slideControls";
 
 interface IResumeState {
 	entryCount: number;
@@ -49,11 +48,6 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					<a title="Download resume in Microsoft Word format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.docx">
 						<ReactSVG
 							src={IconWord}
-						/>
-					</a>
-					<a title="Download resume in text format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.txt">
-						<ReactSVG
-							src={IconText}
 						/>
 					</a>
 				</div>

@@ -1,6 +1,7 @@
 import React from "react";
 
 interface IWebExampleProps {
+	children?: React.ReactNode;
 	github?: string;
 	inactive: boolean;
 	launched?: string;
