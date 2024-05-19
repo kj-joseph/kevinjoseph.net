@@ -49,7 +49,7 @@
 
 	}
 
-	ul {
+	ul.columnList {
 
 		@include respond-to(xsmall) {
 			columns: 2;

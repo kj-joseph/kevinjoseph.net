@@ -44,7 +44,7 @@ export default class ResumeEntry extends React.Component<IResumeEntryProps> {
 						: null
 					}
 					<h4>
-						{this.props.start} &mdash; {this.props.end}{this.props.current ? " (current)" : null}
+						{this.props.start} &ndash; {this.props.end}{this.props.current ? " (current)" : null}
 						{this.props.location ?
 							<>
 								<br />

@@ -79,8 +79,15 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
                         Worked on a wide variety of front- and back-end systems/tools, for both internal and external customer use.
 						</p>
 
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Created monthly performance email, allowing clients to see their monthly ad revenue and other metrics</li>
+							<li>Made various updates to client-facing site-management dashboard</li>
+							<li>Created/maintained dashboard for external contractors to update site status</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
                             <li>Amazon Web Services</li>
 							<li>CSS</li>
 							<li>Git</li>
@@ -103,12 +110,17 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							Responsible for creating and updating a variety of external site pages as well as internal tools.
-							Mainly work on front-end portions using JSP, Typescript, AngularJS, and Less, but occasionally need to work with Java code, Selenium, and MySQL.
+							Responsible for creating and updating a variety of external site pages as well as internal tools. Mainly worked on the front end presentation, but occasionally needed to work with Java, Selenium, and MySQL.
 						</p>
 
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Collaborated on layout components for “long-form hub” landing pages, enabling quicker builds for future pages while allowing for creative flourishes</li>
+							<li>Built dashboards for internal management of facets of the external website, allowing non-technical users to update content</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>AngularJS</li>
 							<li>Bootstrap</li>
 							<li>CSS / Less</li>
@@ -135,12 +147,11 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							QA testing for iQ4, a new web-based customer interface based in Angular.
-							Besides task-by-task integration testing, working to implement an end-to-end testing suite using Protractor.
+							QA testing for iQ4, a new web-based customer interface based in Angular. Besides task-by-task integration testing, working to implement an end-to-end testing suite using Protractor.
 						</p>
 
-						<p>Main technologies used:</p>
-						<ul>
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>Git</li>
 							<li>JavaScript / TypeScript</li>
 							<li>Node.js</li>
@@ -160,29 +171,22 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 						title="Senior Web Developer"
 					>
 
-						<p>I worked on two teams during my time at Renovate America:</p>
-
 						<p>
-							The first was focused on an internal-facing toolkit for the call center.
-							Much of the work focused on transferring functions from an outdated native Java desktop app to the web app.
-							Most of the front-end work was within AngularJS (1.x) and Microsoft .NET Razor.
-							Occasionally, I needed to modify the C#-based API in order to get data to ingest on the front end.
+							My first team at RA was focused on an internal-facing toolkit for the call center. Much of the work focused on transferring functions from an outdated native Java desktop app to the AngularJS web app. Occasionally, I needed to modify the C#-based API.
 						</p>
 
 						<p>
-							One major project during my time on this team was creating an interface for adding products to a customer's project,
-							moving it from a jQuery-heavy independent page that was not user friendly to an integrated part of the larger toolkit.
-							The leaders of the call center were very happy with the new interface,
-							noting that it would make that portion of their responsibilities much easier.
+							The second team maintained the customer-facing marketing website. This site was built on SiteCore for content management, and also included AngularJS and Razor in the front-end stack.
 						</p>
 
-						<p>
-							The second team maintained the customer-facing marketing website.
-							This site was built on SiteCore for content management, and also included AngularJS and Razor in the front-end stack.
-						</p>
-
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Created an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page to an integrated part of the larger toolkit within AngularJS</li>
+							<li>Built landing pages for external website</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>AngularJS (1.x)</li>
 							<li>Bootstrap</li>
 							<li>CSS / Sass</li>
@@ -208,17 +212,17 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							I was part of a small development group working on the analytics for the main BestBuy.com website.
-							Working with the UI/UX developers, we would take in information from the site and package it to send to Adobe Analytics for tracking.
+							I was part of a small development group working on the analytics for the main BestBuy.com website. Working with the UI/UX developers, we would take in information from the site and package it to send to Adobe Analytics for tracking.
 						</p>
 
-						<p>
-							At one point we completely overhauled our codebase, moving from two large, mostly duplicated, jQuery-infused files
-							to a module-based framework using RequireJS and integrated the new framework with Signal Tag Manager.
-						</p>
-
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Full rewrite of code base, moving from confusing jQuery-based files to a module-based framework using RequireJS, integrated with Signal Tag Manager</li>
+							<li>Added new tracking metrics as requested</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>Adobe Analytics</li>
 							<li>Git</li>
 							<li>HTML</li>
@@ -246,8 +250,8 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 							My project was to implement the front-end interface for a new method for students to register for their classes online.
 						</p>
 
-						<p>Main technologies used:</p>
-						<ul>
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>CSS</li>
 							<li>HTML</li>
 							<li>JavaScript</li>
@@ -269,8 +273,8 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 							A short-term contract working with Preventice, developing a medical web application.
 						</p>
 
-						<p>Main technologies used:</p>
-						<ul>
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>CSS</li>
 							<li>Dojo</li>
 							<li>HTML</li>
@@ -291,11 +295,16 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 
 						<p>
 							Working within an in-house content management framework, I worked on customized e-commerce sites for Digital River clients.
-							We completed a complete design of THQ's store, including an integrated single sign on.
 						</p>
 
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Complete design of THQ's store, including integrated single sign on</li>
+							<li>Visual overhaul of Dungeons &amp; Dragons online store</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>CSS</li>
 							<li>HTML</li>
 							<li>JavaScript</li>
@@ -313,18 +322,17 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							Internet Broadcasting (now known as Lakana) is an online publisher for media companies, specializing in television station websites.
-							I worked on front-end enhancements for various properties, developing within an in-house content management framework.
+							Internet Broadcasting (now known as Lakana) is an online publisher for media companies, specializing in television station websites. I worked on front-end enhancements for various properties, developing within an in-house content management framework.  For part of my time, I was the lead developer for the Cox Media websites.
 						</p>
 
-						<p>
-							While the lead front-end developer for the Cox Media sites,
-							I was responsible for (among other projects) the implementation of Adobe Analytics tracking code across their sites
-							as well as adding a new ad unit framework.
-						</p>
-
-						<p>Main technologies used:</p>
+						<p><strong>Project examples:</strong></p>
 						<ul>
+							<li>Implemented Adobe Analytics tracking code across Cox Media websites</li>
+							<li>Added numerous landing pages across various client sites</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+						<ul className="columnList">
 							<li>CSS</li>
 							<li>HTML</li>
 							<li>JavaScript</li>

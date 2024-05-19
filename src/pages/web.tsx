@@ -50,42 +50,6 @@ export default class WebPage<Props> extends React.Component<Props> {
 				>
 
 					<WebExample
-						url="https://study.com/pages/About_Us.html"
-						title="Study.com About Us section"
-						launched="March 2020"
-					>
-
-						<p>
-							A revamp of the About Us section on the Study.com site, using JSP, JSTL, and Less.
-						</p>
-
-						<ul>
-							<li>JSP / JSTL</li>
-							<li>Less</li>
-							<li>TypeScript / JavaScript</li>
-						</ul>
-
-					</WebExample>
-
-					<WebExample
-						url="https://study.com/texes"
-						title="Study.com TEXES landing page"
-						launched="August 2020"
-					>
-
-						<p>
-							One of a number of &quot;long-form hubs&quot; I created while at Study.com, based on designs from in-house designers.
-						</p>
-
-						<ul>
-							<li>JSP / JSTL</li>
-							<li>Less</li>
-							<li>TypeScript / JavaScript</li>
-						</ul>
-
-					</WebExample>
-
-					<WebExample
 						url="https://www.roll-cal.com/"
 						title="Roll-Cal"
 						launched="November 2018"
@@ -99,7 +63,9 @@ export default class WebPage<Props> extends React.Component<Props> {
 							I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
 						</p>
 
-						<ul>
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
 							<li>Babel</li>
 							<li>Express</li>
 							<li>MySQL</li>
@@ -121,10 +87,12 @@ export default class WebPage<Props> extends React.Component<Props> {
 					>
 
 						<p>
-							The site for my freelance graphic design company.
+							The site for my dormant freelance graphic design company.
 						</p>
 
-						<ul>
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
 							<li>Babel</li>
 							<li>JavaScript</li>
 							<li>npm</li>
@@ -138,48 +106,71 @@ export default class WebPage<Props> extends React.Component<Props> {
 					<WebExample
 						url="https://kevinjoseph.net/"
 						title="KevinJoseph.net"
-						version="5.0.0"
-						versionLaunched="March 2021"
+						version="6.1.1"
+						versionLaunched="May 2024"
 						launched="2004"
 						github="kevinjoseph.net"
 					>
 
 						<p>
-							This site.  Switched in late 2018 from AngularJS to React.
+							This site.
 						</p>
 
 						<ul>
+							<li>Switched in late 2018 from AngularJS to React.</li>
+							<li>Changed from Webpack to Vite in May 2024.</li>
+						</ul>
+
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
 							<li>Babel</li>
 							<li>npm</li>
 							<li>React</li>
 							<li>Sass</li>
 							<li>TypeScript / JavaScript</li>
-							<li>Webpack</li>
+							<li>Vite</li>
 						</ul>
 
 					</WebExample>
 
 					<WebExample
-						url="http://store.turbine.com/store/turbine/en_US/list/categoryID.58516100/themeid.29252200"
-						title="Dungeons &amp; Dragons Online Market"
-						launched="2012"
+						url="https://study.com/pages/About_Us.html"
+						title="Study.com About Us section"
+						launched="March 2020"
 					>
 
 						<p>
-							Site theme implemented while working at Digital River.
+							A revamp of the About Us section on the Study.com site, using JSP, JSTL, and Less.
 						</p>
+
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
+							<li>JSP / JSTL</li>
+							<li>Less</li>
+							<li>TypeScript / JavaScript</li>
+						</ul>
 
 					</WebExample>
 
 					<WebExample
-						url="http://store.turbine.com/store/turbine/en_US/list/categoryID.58516200/themeid.28979900"
-						title="The Lord of the Rings Online Market"
-						launched="2012"
+						url="https://study.com/texes"
+						title="Study.com TEXES landing page"
+						launched="August 2020"
 					>
 
 						<p>
-							Site theme implemented while working at Digital River.
+							One of a number of &quot;long-form hubs&quot; I created while at Study.com, based on designs from in-house designers.  We collaborated to create reusable components/styles to ease creation of future pages while still allowing for creative flourishes to be added.
 						</p>
+
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
+							<li>JSP / JSTL</li>
+							<li>Less</li>
+							<li>TypeScript / JavaScript</li>
+						</ul>
 
 					</WebExample>
 
