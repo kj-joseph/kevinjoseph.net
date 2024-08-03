@@ -134,6 +134,33 @@ export default class WebPage<Props> extends React.Component<Props> {
 
 					</WebExample>
 
+
+					<WebExample
+						title="Rocket League overlay"
+						version="0.0.3"
+						versionLaunched="May 2024"
+						launched="2022"
+						github="rl-overlay"
+					>
+
+						<p>
+							A work in progress, this is a system to display an overlay during a live stream of Rocket League gameplay.  The overlay receives data from the game via a WebSocket connection.  I&apos;m currently working on adding a backend control panel and updating the visuals.
+						</p>
+
+						<p><strong>Main technologies used:</strong></p>
+
+						<ul className="columnList">
+							<li>JavaScript</li>
+							<li>Node.js</li>
+							<li>npm</li>
+							<li>React</li>
+							<li>Vite</li>
+							<li>Webpack</li>
+							<li>WebSockets</li>
+						</ul>
+
+					</WebExample>
+
 					<WebExample
 						url="https://study.com/pages/About_Us.html"
 						title="Study.com About Us section"

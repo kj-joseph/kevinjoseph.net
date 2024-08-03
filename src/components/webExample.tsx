@@ -6,7 +6,7 @@ interface IWebExampleProps {
 	inactive: boolean;
 	launched?: string;
 	title: string;
-	url: string;
+	url?: string;
 	version?: string;
 	versionLaunched?: string;
 }

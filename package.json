@@ -6,7 +6,7 @@
 	},
 	"homepage": "https://kevinjoseph.net/",
 	"private": true,
-	"version": "6.1.1",
+	"version": "6.1.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
