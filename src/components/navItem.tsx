@@ -11,7 +11,7 @@ interface INavItemProps {
 	setNavStateFunction: (newNavState: boolean) => void;
 }
 
-export default class ResumeEntry extends React.Component<INavItemProps> {
+export default class NavItem extends React.Component<INavItemProps> {
 
 	constructor(props: INavItemProps) {
 		super(props);

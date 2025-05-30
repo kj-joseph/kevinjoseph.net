@@ -26,7 +26,7 @@ export default class Header extends React.Component<IHeaderProps> {
 
 				<div className="header__details">
 					<div className="header__name">Kevin Joseph</div>
-					<div className="header__title">Web Developer</div>
+					<div className="header__title">Software Engineer</div>
 					<div className="header__location">San Diego, CA</div>
 
 					<div className="header__menu-button">
@@ -51,7 +51,7 @@ export default class Header extends React.Component<IHeaderProps> {
 						classes={["nav__item--resume"]}
 						setNavStateFunction={this.setNavState}
 					>
-						I have over fifteen years of experience in front-end web development.  Read about my journey and download a copy of my resume.
+						I have over fifteen years of experience in software engineering and web development.  Read about my journey and download a copy of my resume.
 					</NavItem>
 
 					<NavItem

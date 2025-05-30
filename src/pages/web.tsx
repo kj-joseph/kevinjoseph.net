@@ -53,29 +53,29 @@ export default class WebPage<Props> extends React.Component<Props> {
 						url="https://www.roll-cal.com/"
 						title="Roll-Cal"
 						launched="November 2018"
-						github="rollcal"
+						github="kj-joseph/rollcal"
 					>
 
 						<p>
-							Searchable calendar for roller derby events.  Allows users to create accounts to add their own events.
-						</p>
-						<p>
-							I created everything for the site: graphics, front-end web app, API, and automated deployment using Travis CI.
+							Searchable calendar for roller derby events. Allows users to create accounts to add their own events. I created everything for the site, including graphics, a front-end React app, a back-end API using Express and Node.js, and automated deployment using Travis CI.
 						</p>
 
 						<p><strong>Main technologies used:</strong></p>
 
 						<ul className="columnList">
-							<li>Babel</li>
-							<li>Express</li>
-							<li>MySQL</li>
-							<li>Node.js</li>
-							<li>npm</li>
 							<li>React</li>
 							<li>Redux</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>Express</li>
+							<li>Node.js</li>
+							<li>MySQL</li>
+							<li>npm</li>
+							<li>HTML</li>
+							<li>CSS</li>
 							<li>Sass</li>
-							<li>TypeScript / JavaScript</li>
 							<li>Webpack</li>
+							<li>Babel</li>
 						</ul>
 
 					</WebExample>
@@ -106,10 +106,10 @@ export default class WebPage<Props> extends React.Component<Props> {
 					<WebExample
 						url="https://kevinjoseph.net/"
 						title="KevinJoseph.net"
-						version="6.1.1"
-						versionLaunched="May 2024"
+						version="6.1.3"
+						versionLaunched="May 2025"
 						launched="2004"
-						github="kevinjoseph.net"
+						github="kj-joseph/kevinjoseph.net"
 					>
 
 						<p>
@@ -124,27 +124,33 @@ export default class WebPage<Props> extends React.Component<Props> {
 						<p><strong>Main technologies used:</strong></p>
 
 						<ul className="columnList">
-							<li>Babel</li>
-							<li>npm</li>
 							<li>React</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>HTML</li>
+							<li>CSS</li>
 							<li>Sass</li>
-							<li>TypeScript / JavaScript</li>
 							<li>Vite</li>
+							<li>npm</li>
 						</ul>
 
 					</WebExample>
 
 
 					<WebExample
-						title="Rocket League overlay"
-						version="0.0.3"
-						versionLaunched="May 2024"
+						title="Esports broadcast overlay for Rocket League"
+						url="https://youtu.be/6-AsQXi23o0?t=274"
+						version="1.0.0"
+						versionLaunched="December 2024"
 						launched="2022"
-						github="rl-overlay"
+						github="RSC-NA/stream-overlay-v2"
 					>
 
 						<p>
-							A work in progress, this is a system to display an overlay during a live stream of Rocket League gameplay.  The overlay receives data from the game via a WebSocket connection.  I&apos;m currently working on adding a backend control panel and updating the visuals.
+							This overlay receives raw data from the game via a WebSocket connection, then sits on top of the game screen during live broadcasts to display the data in a graphical format, showing information like the score, time remaining, and player stats. The overlay system also includes pre-game matchup and statistics as well as post-game stats for all players.
+						</p>
+						<p>
+							I&apos;ve launched a version of my overlay for two leagues, customizing the visual style for each as well as bringing in season-to-date stats for use during the pregame; one does this via an API, while the other gets data from Google Sheets
 						</p>
 
 						<p><strong>Main technologies used:</strong></p>

@@ -7,6 +7,7 @@ import { ReactSVG } from "react-svg";
 
 import ResumeEntry from "@/components/resumeEntry";
 import SlideControls from "@/components/slideControls";
+import { Link } from "react-router-dom";
 
 interface IResumeState {
 	entryCount: number;
@@ -45,7 +46,7 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 							src={IconPDF}
 						/>
 					</a>
-					<a title="Download resume in Microsoft Word format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.docx">
+					<a title="Download resume in Microsoft Word (.docx) format" href="/resumeFiles/Kevin%20Joseph%20-%20resume.docx">
 						<ReactSVG
 							src={IconWord}
 						/>
@@ -68,6 +69,25 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 				>
 
 					<ResumeEntry
+						company="Self-Employed"
+						start="December 2022"
+						current={true}
+					>
+
+						<p>
+							I was laid off from Ezoic in December 2022. After a small break in order to travel, I&apos;ve been looking for an opportunity to get back into a development role while working as a rideshare driver. I&apos;ve also spent part of this time working on personal development projects.
+						</p>
+
+						<p><strong>Project examples:</strong></p>
+						<ul>
+							<li>Esports broadcast overlay, developed in React. (More details available in <Link to="/web">Examples</Link>.)</li>
+							<li>System for tracking item progression during charity gaming fundraiser.This is a work in progress utilizing a MySQL database, an API written in Go, and a React front end.</li>
+						</ul>
+
+					</ResumeEntry>
+
+
+					<ResumeEntry
 						company="Ezoic"
 						start="May 2021"
 						end="December 2022"
@@ -76,27 +96,27 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-                        Worked on a wide variety of front- and back-end systems/tools, for both internal and external customer use.
+                        	Worked on a wide variety of front- and back-end systems/tools, for both internal and external customer use.
 						</p>
 
 						<p><strong>Project examples:</strong></p>
 						<ul>
-							<li>Created monthly performance email, allowing clients to see their monthly ad revenue and other metrics</li>
-							<li>Made various updates to client-facing site-management dashboard</li>
-							<li>Created/maintained dashboard for external contractors to update site status</li>
+							<li>Created monthly performance dashboard allowing clients to view their monthly ad revenue, engagement, and other metrics at a glance.</li>
+							<li>Made updates to client-facing dashboards, allowing users to manage their sites more quickly.</li>
+							<li>Created/maintained dashboard for external contractors to update site status.</li>
 						</ul>
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-                            <li>Amazon Web Services</li>
+							<li>Go</li>
+							<li>Vue</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>PHP</li>
+							<li>MySQL</li>
+							<li>HTML</li>
 							<li>CSS</li>
 							<li>Git</li>
-							<li>Go</li>
-							<li>HTML 5</li>
-							<li>JavaScript / TypeScript</li>
-							<li>MySQL</li>
-							<li>PHP</li>
-							<li>Vue</li>
 						</ul>
 
 					</ResumeEntry>
@@ -110,29 +130,31 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							Responsible for creating and updating a variety of external site pages as well as internal tools. Mainly worked on the front end presentation, but occasionally needed to work with Java, Selenium, and MySQL.
+							Responsible for creating and updating external site pages as well as internal tools. Worked extensively on the front-end customer view, and also created tests with Selenium to ensure the MySQL backend was performant with the Java frontend.
 						</p>
 
 						<p><strong>Project examples:</strong></p>
 						<ul>
-							<li>Collaborated on layout components for “long-form hub” landing pages, enabling quicker builds for future pages while allowing for creative flourishes</li>
-							<li>Built dashboards for internal management of facets of the external website, allowing non-technical users to update content</li>
+							<li>Collaborated on layout components for long-form hub landing pages, enabling quicker builds for future pages while allowing for customizations.</li>
+							<li>Built dashboards for internal management of the external website, allowing non-technical users to update content on demand.</li>
 						</ul>
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
 							<li>AngularJS</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>CSS</li>
+							<li>Less</li>
 							<li>Bootstrap</li>
-							<li>CSS / Less</li>
-							<li>Git</li>
 							<li>Gulp</li>
-							<li>HTML 5</li>
+							<li>HTML</li>
+							<li>JSP</li>
+							<li>JSTL</li>
 							<li>Java</li>
-							<li>JavaScript / TypeScript</li>
-							<li>JSP / JSTL</li>
 							<li>MySQL</li>
-							<li>RequireJS</li>
 							<li>Selenium</li>
+							<li>Git</li>
 						</ul>
 
 					</ResumeEntry>
@@ -147,18 +169,19 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							QA testing for iQ4, a new web-based customer interface based in Angular. Besides task-by-task integration testing, working to implement an end-to-end testing suite using Protractor.
+							Build QA testing for iQ4, a web-based customer interface based in Angular. Besides task-by-task integration testing, I worked to implement an end-to-end testing suite using Protractor and Selenium. creating unit tests for various front end components.
 						</p>
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>Git</li>
-							<li>JavaScript / TypeScript</li>
-							<li>Node.js</li>
-							<li>npm</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
 							<li>Protractor</li>
 							<li>Selenium</li>
 							<li>Yarn</li>
+							<li>npm</li>
+							<li>Node.js</li>
+							<li>Git</li>
 						</ul>
 
 					</ResumeEntry>
@@ -172,31 +195,28 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							My first team at RA was focused on an internal-facing toolkit for the call center. Much of the work focused on transferring functions from an outdated native Java desktop app to the AngularJS web app. Occasionally, I needed to modify the C#-based API.
-						</p>
-
-						<p>
-							The second team maintained the customer-facing marketing website. This site was built on SiteCore for content management, and also included AngularJS and Razor in the front-end stack.
+							At RA I was primarily focused with two separate teams: one focusing on the internally-facing toolkit used in call center operations, and the other maintaining the externally-facing website.
 						</p>
 
 						<p><strong>Project examples:</strong></p>
 						<ul>
-							<li>Created an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page to an integrated part of the larger toolkit within AngularJS</li>
-							<li>Built landing pages for external website</li>
+							<li>Created an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page to an integrated part of the larger toolkit within AngularJS.</li>
+							<li>Built landing pages for the customer-facing website incorporating a SiteCore CMS using AngularJS and Razor.</li>
 						</ul>
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>AngularJS (1.x)</li>
-							<li>Bootstrap</li>
-							<li>CSS / Sass</li>
-							<li>Git</li>
-							<li>Gulp</li>
-							<li>HTML 5</li>
+							<li>AngularJS</li>
 							<li>JavaScript</li>
+							<li>Gulp</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Sass</li>
+							<li>Bootstrap</li>
 							<li>Kendo UI</li>
 							<li>Microsoft .NET Razor</li>
 							<li>Microsoft C#</li>
+							<li>Git</li>
 							<li>Microsoft TFS</li>
 						</ul>
 
@@ -212,26 +232,25 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 					>
 
 						<p>
-							I was part of a small development group working on the analytics for the main BestBuy.com website. Working with the UI/UX developers, we would take in information from the site and package it to send to Adobe Analytics for tracking.
+							I was part of a small development group working on the analytics for the main BestBuy.com website. Working with the UI/UX developers, I would take in telemetry from the site and use Adobe Analytics for tracking the metrics required by the business.
 						</p>
 
 						<p><strong>Project examples:</strong></p>
 						<ul>
-							<li>Full rewrite of code base, moving from confusing jQuery-based files to a module-based framework using RequireJS, integrated with Signal Tag Manager</li>
-							<li>Added new tracking metrics as requested</li>
+							<li>Led the effort to do a full rewrite of the website front end code base, moving from jQuery-based files to a module-based framework using RequireJS, integrated with Signal Tag Manager.</li>
+							<li>Added new tracking metrics as requested by the business.</li>
 						</ul>
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>Adobe Analytics</li>
-							<li>Git</li>
-							<li>HTML</li>
 							<li>JavaScript</li>
-							<li>Jenkins</li>
-							<li>jQuery</li>
-							<li>Lodash</li>
 							<li>RequireJS</li>
+							<li>Lodash</li>
+							<li>jQuery</li>
+							<li>Jenkins</li>
+							<li>Adobe Analytics</li>
 							<li>Signal Tag Manager</li>
+							<li>Git</li>
 						</ul>
 
 					</ResumeEntry>
@@ -252,9 +271,9 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>CSS</li>
-							<li>HTML</li>
 							<li>JavaScript</li>
+							<li>HTML</li>
+							<li>CSS</li>
 							<li>JSP</li>
 						</ul>
 
@@ -275,12 +294,12 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>CSS</li>
-							<li>Dojo</li>
-							<li>HTML</li>
 							<li>JavaScript</li>
 							<li>jQuery</li>
 							<li>JSP</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Dojo</li>
 						</ul>
 
 					</ResumeEntry>
@@ -305,10 +324,10 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>CSS</li>
-							<li>HTML</li>
 							<li>JavaScript</li>
 							<li>jQuery</li>
+							<li>HTML</li>
+							<li>CSS</li>
 						</ul>
 
 					</ResumeEntry>
@@ -333,10 +352,11 @@ export default class ResumePage<Props> extends React.Component<Props, IResumeSta
 
 						<p><strong>Main technologies used:</strong></p>
 						<ul className="columnList">
-							<li>CSS</li>
-							<li>HTML</li>
 							<li>JavaScript</li>
-							<li>XML / XSLT</li>
+							<li>XML</li>
+							<li>XSLT</li>
+							<li>HTML</li>
+							<li>CSS</li>
 							<li>YUI</li>
 						</ul>
 

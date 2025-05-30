@@ -9,12 +9,6 @@ const history = createBrowserHistory();
 // load site css
 import "@/styles/main.scss";
 
-// load static files
-// import "@/static/.htaccess";
-// fs.readdir("@/static/resume", {},  () => {});
-// fs.readdir("@/images/favicon", {},  () => {});
-// import "@/static/robots.txt";
-
 // import page classes
 import ContactPage from "@/pages/contact";
 import HomePage from "@/pages/homepage";

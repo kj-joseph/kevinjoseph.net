@@ -24,7 +24,7 @@ export default class ContactPage<Props> extends React.Component<Props> {
 
 				<dl>
 					<dt>Email</dt>
-					<dd>kevin.p.joseph@gmail.com</dd>
+					<dd>kevin@kevinjoseph.net</dd>
 					<dt>Phone</dt>
 					<dd>+1 612-597-2426</dd>
 					<dt>External Links</dt>

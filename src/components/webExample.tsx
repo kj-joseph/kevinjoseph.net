@@ -65,7 +65,7 @@ export default class WebExample extends React.Component<IWebExampleProps> {
 						{this.props.github ?
 							<>
 								{this.props.url ? " | " : null}
-								<a href={`https://github.com/kj-joseph/${this.props.github}`} target="_blank" rel="noopener noreferrer">
+								<a href={`https://github.com/${this.props.github}`} target="_blank" rel="noopener noreferrer">
 									GitHub repository
 								</a>
 							</>
