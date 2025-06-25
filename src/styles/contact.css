@@ -1,0 +1,59 @@
+.contact {
+
+	.formField {
+		position: relative;
+		margin-bottom: 2rem;
+
+		label {
+			position: absolute;
+			left: 5px;
+			top: 0;
+			transform: translateY(-50%);
+			font-size: .7rem;
+			padding: 0 10px;
+			background: var(--bgColor);
+		}
+/* [type=text] */
+		input, textarea {
+			width: 100%;
+			font-size: 1rem;
+			padding: 10px;
+			border: 1px solid var(--textColor);
+			background: var(--bgColor);
+		}
+
+		textarea {
+			resize: vertical;
+			height: 10em;
+		}
+
+	}
+
+	.buttons {
+		text-align: right;
+
+		.errorMessage {
+			color: red;
+		}
+
+		button {
+			color: var(--offWhite);
+			font-size: 1.2rem;
+			font-weight: var(--fontBold);
+			padding: 5px 10px;
+			margin-bottom: 10px;
+			border: none;
+
+			&[type=submit] {
+				background: var(--blue);
+			}
+
+		}
+
+	}
+
+	.disabled, :disabled {
+		opacity: .5;
+	}
+
+}

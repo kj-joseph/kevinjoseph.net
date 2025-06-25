@@ -1,53 +1,59 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 
-interface INavItemProps {
-	children?: React.ReactNode;
-	classes?: string[];
-	description?: string;
-	exactMatch?: boolean;
-	link: string;
-	name: string;
-	setNavStateFunction: (newNavState: boolean) => void;
+import styled from "styled-components";
+
+const StyledNavItem = styled(NavLink).attrs<{$image: string}>(props => ({ $image: props.$image }))`
+	position: relative;
+	display: block;
+	color: var(--offWhite);
+	font-size: 1.7rem;
+	font-weight: var(--fontBold);
+	text-decoration: none;
+	padding: 60px 10px 10px;
+	/* margin-bottom: 20px; */
+	border-width: 5px;
+	border-style: solid;
+	border-image: var(--gradient);
+	border-image-slice: 1;
+	background-image:
+		linear-gradient(to top, var(--black) 1rem, rgba(0, 0, 0, .2) 3.5rem),
+		url("${props => props.$image}")
+	;
+	background-size:
+		contain,
+		cover;
+	background-repeat:
+		no-repeat,
+		no-repeat;
+	background-position:
+		center center,
+		center center;
+
+
+	&:hover, &:active, &:focus {
+		border-color: var(--offWhite);
+		border-image: none;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 640px) {
+		width: calc(50% - 40px);
+		/* flex-basis: calc(50% - 40px); */
+	}
+
+`;
+
+const NavItem = ({title, link, image, closeNavOnClick}: {title: string, link: string, image: string, closeNavOnClick: () => void}) => {
+
+	return (
+		<StyledNavItem to={link} className="menuItemText" $image={image} onClick={closeNavOnClick}>
+			{title}
+		</StyledNavItem>
+	)
+
 }
 
-export default class NavItem extends React.Component<INavItemProps> {
-
-	constructor(props: INavItemProps) {
-		super(props);
-	}
-
-	render(): JSX.Element {
-
-		return (
-
-			<NavLink
-				to={this.props.link}
-				exact={this.props.exactMatch}
-				className={`nav__item ${this.props.classes && this.props.classes.length ? this.props.classes.join(" ") : null}`}
-				activeClassName="nav__item--active"
-				onClick={this.setNavClosed}
-			>
-
-				<span className="nav__item__header">{this.props.name}</span>
-
-				{ this.props.children ?
-
-					<span className="nav__item__description">{this.props.children}</span>
-
-					: null
-				}
-
-			</NavLink>
-
-		);
-
-	}
-
-	setNavClosed = ():void => {
-
-		this.props.setNavStateFunction(false);
-
-	}
-
-}
+export default NavItem;

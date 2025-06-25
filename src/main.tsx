@@ -1,101 +1,87 @@
-import { createBrowserHistory } from "history";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { Route, Router, Switch } from "react-router-dom";
-// import fs from "fs";
+// import { createBrowserHistory } from "history";
+import { lazy, StrictMode, Suspense, useState } from "react";
+import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-const history = createBrowserHistory();
+import "@/styles/main.css";
 
-// load site css
-import "@/styles/main.scss";
+import Header from "@/views/Header";
+import Page from "@/components/Page";
 
-// import page classes
-import ContactPage from "@/pages/contact";
-import HomePage from "@/pages/homepage";
-import ResumePage from "@/pages/resume";
-import WebPage from "@/pages/web";
+const Contact = lazy(() => import("@/views/Contact") )
+const Home = lazy(() => import("@/views/Home") )
+const Projects = lazy(() => import("@/views/Projects") )
+const Resume = lazy(() => import("@/views/Resume") )
 
-import NotFoundPage from "@/status/404";
+const App = () => {
 
-// import compoments
-import Header from "@/components/header";
+	const [menuOpen, setMenuOpen] = useState(false);
 
-interface IIndexState {
-	navOpen: boolean;
-}
-
-class AppRouter<Props> extends React.Component<Props, IIndexState> {
-
-	state: IIndexState = {
-		navOpen: false
+	const closeNavOnClick = () => {
+		setMenuOpen(false);
 	}
 
-	constructor(props: Props) {
-		super(props);
-	}
+	const AppRouter = createBrowserRouter([{
+		element: (
+			<>
+				<Header
+					menuOpen={menuOpen}
+					setMenuOpen={setMenuOpen}
+				/>
+				<div className="content">
+					<Outlet />
+				</div>
+			</>
+		),
+		children: [
+			{
+				path: "/",
+				element:
+					<Suspense fallback={<>Loading...</>}>
+						<Page pageBackground="/images/home.jpg">
+							<Home closeNavOnClick={closeNavOnClick} />
+						</Page>
+					</Suspense>,
+			},
+			{
+				path: "/contact",
+				element:
+					<Suspense fallback={<>Loading...</>}>
+						<Page pageBackground="/images/contact.jpg">
+							<Contact />
+						</Page>
+					</Suspense>,
+			},
+			{
+				path: "/projects",
+				element:
+					<Suspense fallback={<>Loading...</>}>
+						<Page pageBackground="/images/code.jpg">
+							<Projects />
+						</Page>
+					</Suspense>,
+			},
+			{
+				path: "/resume",
+				element:
+					<Suspense fallback={<>Loading...</>}>
+						<Page pageBackground="/images/team.jpg">
+							<Resume />
+						</Page>
+					</Suspense>,
+			},
+		],
+	}]);
 
-	componentDidMount(): void {
-		this.updateNavState();
-	}
 
-	componentDidUpdate() {
-		window.onpopstate = () => {
-			this.updateNavState();
-		};
-	}
-
-	render(): JSX.Element {
-
-		return (
-
-			<Router history={history}>
-
-				<>
-
-					<Header
-						setNavStateFunction={this.setNavState}
-					/>
-
-					<div id="content">
-						<Switch>
-							<Route path="/" component={HomePage} exact={true} />
-
-							<Route path="/contact" component={ContactPage} />
-							<Route path="/resume" component={ResumePage} />
-							<Route path="/web" component={WebPage} />
-
-							<Route component={NotFoundPage} />
-						</Switch>
-					</div>
-
-				</>
-
-			</Router>
-
-		);
-	}
-
-	setNavState = (newNavState: boolean): void => {
-
-		if (newNavState) {
-			document.documentElement.classList.add("nav-open");
-		} else {
-			document.documentElement.classList.remove("nav-open");
-		}
-
-		this.setState({
-			navOpen: newNavState,
-		});
-
-	}
-
-	updateNavState = () => {
-		this.setNavState(document.location.pathname==="/");
-	}
+	return (
+		<RouterProvider router={AppRouter} />
+	)
 
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(
-	<AppRouter />
-);
+createRoot(document.getElementById('root')!).render(
+	<StrictMode>
+		<App />
+	</StrictMode>,
+)
