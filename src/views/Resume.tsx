@@ -12,7 +12,7 @@ const Resume = () => {
 			<div className="download">
 				<p>Download resume:
 					<a href="/resumeFiles/Kevin Joseph - resume.pdf" download>
-						<span className="icon"><img src="/images/pdf.svg" alt=""/></span> SVG
+						<span className="icon"><img src="/images/pdf.svg" alt=""/></span> PDF
 					</a>
 					<a href="/resumeFiles/Kevin Joseph - resume.docx" download>
 						<span className="icon"><img src="/images/word.svg" alt=""/></span> Word
