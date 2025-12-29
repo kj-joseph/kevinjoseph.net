@@ -21,15 +21,32 @@ const Resume = () => {
 			</div>
 
 			<ResumeItem
-				company="Self-Employed"
-				start="Dec 2022"
-				logo="images/kj.png"
+				company="United States Postal Service"
+				start="Jul 2025"
+				logo="images/usps.png"
+				title="Rural Carrier Associate"
 				current={true}
 			>
-				<p>I was laid off from Ezoic in December 2022. After a small break in order to travel, I&apos;ve been looking for an opportunity to get back into a development role while working as a rideshare driver. I&apos;ve also spent part of this time working on personal development projects:</p>
+				<p>Worked independently in high-accountability service roles requiring accuracy, time management, and consistent execution under daily operational constraints. Demonstrated reliability, adaptability, and strong self-direction while managing dynamic schedules and customer-facing responsibilities.</p>
 				<ul>
-					<li>Esports broadcast overlay, developed in React.</li>
-					<li>System for tracking item progression during charity gaming fundraiser.This is a work in progress utilizing a MySQL database, an API written in Go, and a React front end.</li>
+					<li>Dependable in executing daily mail delivery routes with consistent accuracy, meeting strict schedules and service-level expectations in a high-volume environment.</li>
+					<li>Detail-oriented in sorting, organizing, and delivering mail to ensure correct handling, regulatory compliance, and customer satisfaction.</li>
+					<li>Self-directed while working independently in a fast-paced setting, managing time effectively and adapting to changing routes, weather, and operational demands.</li>
+				</ul>
+			</ResumeItem>
+
+			<ResumeItem
+				company="Rocket Soccar Confederation"
+				start="Jun 2022"
+				logo="images/rsc.png"
+				title="Media Committee Head / Overlay Developer / Stream Producer"
+				current={true}
+			>
+				<p>Led media production and live broadcast initiatives for a competitive online esports league, developing real-time overlays and producing reliable live streams under production pressure. Combined front-end engineering, collaboration, and live troubleshooting to deliver consistent, high-quality viewer experiences.</p>
+				<ul>
+					<li>Technical lead responsible for designing and developing live esports broadcast overlays using React, HTML, CSS, Sass, and WebSockets to support real-time match data and viewer engagement.</li>
+					<li>Collaborative head of the Media Committee, partnering with league administrators, casters, and production staff to standardize visual assets, improve broadcast quality, and ensure consistent delivery across events.</li>
+					<li>Hands-on stream producer overseeing live match broadcasts, troubleshooting technical issues in real time, and ensuring reliable, high-quality streams for competitive online audiences.</li>
 				</ul>
 			</ResumeItem>
 
@@ -41,15 +58,15 @@ const Resume = () => {
 				logo="images/ezoic.png"
 				title="Software Engineer"
 			>
-				<p>Worked on a wide variety of front- and back-end systems/tools, for both internal and external customer use.</p>
+				<p>Developed and enhanced client-facing dashboards that surfaced performance, revenue, and engagement metrics for web publishers at scale. Partnered across teams to build maintainable, user-focused front-end solutions that improved operational efficiency and data visibility.</p>
 				<h3>Project examples</h3>
 					<ul>
-						<li>Created monthly performance dashboard allowing clients to view their monthly ad revenue, engagement, and other metrics at a glance.</li>
-						<li>Made updates to client-facing dashboards, allowing users to manage their sites more quickly.</li>
-						<li>Created/maintained dashboard for external contractors to update site status.</li>
+						<li>Designed and delivered a monthly performance dashboard enabling clients to quickly view ad revenue, engagement, and key site metrics, improving transparency and decision-making.</li>
+						<li>Enhanced client-facing dashboards by streamlining workflows and interface interactions, allowing users to manage and update their sites more efficiently.</li>
+						<li>Developed and maintained an internal dashboard for external contractors to update site status and operational data, reducing manual coordination and improving data accuracy.</li>
 					</ul>
 				<h3>Main technologies:</h3>
-				<p>Go, Vue, JavaScript, TypeScript, PHP, MySQL, HTML, CSS, Git</p>
+				<p>Go (GoLang), Vue, JavaScript, TypeScript, PHP, MySQL, HTML, CSS, Git</p>
 			</ResumeItem>
 
 			<ResumeItem
@@ -60,14 +77,16 @@ const Resume = () => {
 				logo="images/study.png"
 				title="Front-End Software Engineer"
 			>
-				<p>Responsible for creating and updating external site pages as well as internal tools. Worked extensively on the front-end customer view, and also created tests with Selenium to ensure the MySQL backend was performant with the Java frontend.</p>
+				<p>Contributed to reusable front-end components and internal dashboards that accelerated content delivery and reduced engineering dependency for non-technical teams. Delivered scalable Angular-based solutions within an Agile environment, emphasizing maintainability and consistent user experience.</p>
 				<h3>Project examples</h3>
 					<ul>
-						<li>Collaborated on layout components for long-form hub landing pages, enabling quicker builds for future pages while allowing for customizations.</li>
-						<li>Built dashboards for internal management of the external website, allowing non-technical users to update content on demand.</li>
+						<li>Collaborated on the design and implementation of reusable layout components for long-form hub landing pages, accelerating page creation while preserving flexibility for custom content.</li>
+						<li>Built internal management dashboards that enabled non-technical teams to update and manage website content on demand, reducing engineering dependency.</li>
+						<li>Implemented scalable front-end solutions within an AngularJS environment, ensuring consistency, maintainability, and alignment with established design patterns.</li>
+						<li>Supported Agile development practices by working closely with designers, product managers, and back-end engineers to deliver high-quality features on schedule.</li>
 					</ul>
 				<h3>Main technologies:</h3>
-				<p>AngularJS, JavaScript, TypeScript, CSS, Less, Bootstrap, Gulp, HTML, JSP, JSTL, Java, MySQL, Selenium, Git</p>
+				<p>AngularJS, JavaScript, TypeScript, CSS, Less, Bootstrap, Gulp, HTML, JSP, Java, MySQL, Selenium, Git</p>
 			</ResumeItem>
 
 			<ResumeItem
@@ -78,45 +97,9 @@ const Resume = () => {
 				logo="images/rain-bird.png"
 				title="Software Testing Engineer"
 			>
-				<p>Build QA testing for iQ4, a web-based customer interface based in Angular. Besides task-by-task integration testing, I worked to implement an end-to-end testing suite using Protractor and Selenium. creating unit tests for various front end components.</p>
+				<p>Performed integration and end-to-end testing for a customer-facing web application, ensuring reliability and functional accuracy across releases. Built automated test suites to improve coverage, reduce regression risk, and support consistent delivery quality.</p>
 				<h3>Main technologies:</h3>
 				<p>JavaScript, TypeScript, Protractor, Selenium, Yarn, npm, Node.js, Git</p>
-			</ResumeItem>
-
-			<ResumeItem
-				company="Renovate America"
-				location="San Diego CA"
-				start="May 2015"
-				end="Apr 2017"
-				logo="images/renovate-america.png"
-				title="Web Developoer"
-			>
-				<p>At RA I was primarily focused with two separate teams: one focusing on the internally-facing toolkit used in call center operations, and the other maintaining the externally-facing website.</p>
-				<h3>Project examples</h3>
-					<ul>
-						<li>Created an interface for adding products to a customer's project, moving it from a jQuery-heavy independent page to an integrated part of the larger toolkit within AngularJS.</li>
-						<li>Built landing pages for the customer-facing website incorporating a SiteCore CMS using AngularJS and Razor.</li>
-					</ul>
-				<h3>Main technologies:</h3>
-				<p>AngularJS, JavaScript, Gulp, HTML, CSS, Sass, Bootstrap, Kendo UI, Microsoft .NET Razor, Microsoft C#, Git, Microsoft TFS</p>
-			</ResumeItem>
-
-			<ResumeItem
-				company="Best Buy"
-				location="Richfield MN"
-				start="Sep 2013"
-				end="Mar 2015"
-				logo="images/best-buy.png"
-				title="Web Developer"
-			>
-				<p>I was part of a small development group working on the analytics for the main BestBuy.com website. Working with the UI/UX developers, I would take in telemetry from the site and use Adobe Analytics for tracking the metrics required by the business.</p>
-				<h3>Project examples</h3>
-					<ul>
-						<li>Led the effort to do a full rewrite of the website front end code base, moving from jQuery-based files to a module-based framework using RequireJS, integrated with Signal Tag Manager.</li>
-						<li>Added new tracking metrics as requested by the business.</li>
-					</ul>
-				<h3>Main technologies:</h3>
-				<p>JavaScript, RequireJS, Lodash, jQuery, Jenkins, Adobe Analytics, Signal Tag Manager, Git</p>
 			</ResumeItem>
 
 		</div>
